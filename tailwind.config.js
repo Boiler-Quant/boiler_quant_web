@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: ["CatchyMager", "sans-serif"], // Defaults to sans-serif
+        catchy: ["CatchyMager", "sans-serif"], // Defaults to sans-serif
       },
     },
   },

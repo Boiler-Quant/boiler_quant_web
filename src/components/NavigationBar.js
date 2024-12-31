@@ -23,7 +23,7 @@ const NavigationBar = () => {
     scrollY > 300
       ? "bg-black"
       : `bg-gradient-to-b from-black to-transparent opacity-${Math.min(
-          Math.floor(scrollY / 3),
+          Math.floor(scrollY / 3) + 10,
           100
         )}`;
 

@@ -1,8 +1,14 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
+import { useTheme } from "../theme-context";
 
 const Main = () => {
+  const theme = useTheme();
+
   return (
-    <div>
+    <div className="overflow-hidden">
+      {/* Hero Section */}
       <div
         className="relative w-full h-screen bg-cover bg-center"
         style={{
@@ -36,6 +42,176 @@ const Main = () => {
             </svg>
           </div>
         </div>
+      </div>
+
+      {/* About Us Section */}
+      <section className="py-40 px-20 bg-gray-100">
+        <h2 className="text-5xl font-bold mb-12 font-catchy">About Us</h2>
+        <div className="container space-y-16">
+          <hr className="my-12 border-gray-800" />
+          {/* Section 1 */}
+          <Section
+            title="Networking Opportunities"
+            content="We connect Purdue students with top financial firms and industry leaders through networking events and speaker series."
+            animation="slideInLeft"
+          />
+
+          {/* Horizontal Line */}
+          <hr className="my-12 border-gray-800" />
+
+          {/* Section 2 */}
+          <Section
+            title="Skill Development"
+            content="Participate in workshops and case studies to enhance your financial analysis, investment, and quantitative skills."
+            animation="slideInRight"
+          />
+
+          {/* Horizontal Line */}
+          <hr className="my-12 border-gray-800" />
+
+          {/* Section 3 */}
+          <Section
+            title="Community Building"
+            content="Join a community of like-minded students passionate about finance, and collaborate on impactful projects and initiatives."
+            animation="slideInLeft"
+          />
+        </div>
+      </section>
+
+      {/* Club Highlights Section */}
+      <section className="py-40 px-20 bg-white">
+        <h2 className="text-5xl font-bold mb-12 font-catchy">
+          Fall `24 Highlights
+        </h2>
+        <div className="container space-y-16">
+          <Highlight
+            image="/purdue_image.jpg"
+            title="Exclusive Speaker Sessions"
+            content="Gain insights from industry leaders who share their journeys and advice for aspiring financial professionals."
+          />
+          {/* Highlight 2 */}
+          <Highlight
+            image="/purdue_image.jpg"
+            title="Case Competitions"
+            content="Showcase your analytical and problem-solving skills by participating in high-stakes competitions."
+            reverse
+          />
+          {/* Highlight 3 */}
+          <Highlight
+            image="/purdue_image.jpg"
+            title="Social Events"
+            content="Build connections and unwind at our fun and engaging social events designed for all members."
+          />{" "}
+        </div>
+      </section>
+
+      {/* Join Us Section */}
+      <section className="py-40 px-20 bg-gray-100 text-center">
+        <h2 className="text-5xl font-bold mb-8 font-catchy">Join Us</h2>
+        <p className="text-2xl mb-12">
+          The application for 2025 Spring is open! Check the details below.
+        </p>
+        <Link
+          to="/join-us"
+          className={`inline-block ${theme.highlight} text-white text-lg font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors`}
+        >
+          Apply Now
+        </Link>
+      </section>
+
+      <style jsx>{`
+        @keyframes slideInLeft {
+          from {
+            transform: translateX(-50%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes slideInRight {
+          from {
+            transform: translateX(50%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes slideOutLeft {
+          from {
+            transform: translateX(0);
+            opacity: 1;
+          }
+          to {
+            transform: translateX(-50%);
+            opacity: 0;
+          }
+        }
+        @keyframes slideOutRight {
+          from {
+            transform: translateX(0);
+            opacity: 1;
+          }
+          to {
+            transform: translateX(50%);
+            opacity: 0;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
+const Section = ({ title, content, animation }) => {
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
+
+  const animationStyle = inView
+    ? {
+        animation: `${animation} 0.7s ease-out forwards`,
+      }
+    : {
+        animation: `${
+          animation.includes("Left") ? "slideOutLeft" : "slideOutRight"
+        } 0.7s ease-out forwards`,
+      };
+
+  return (
+    <div
+      ref={ref}
+      className="flex items-center"
+      style={{
+        opacity: inView ? 1 : 0,
+        ...animationStyle,
+      }}
+    >
+      <div className="space-y-4">
+        <h3 className="text-3xl font-semibold font-catchy">{title}</h3>
+        <p className="text-2xl font-serif">{content}</p>
+      </div>
+    </div>
+  );
+};
+
+const Highlight = ({ image, title, content, reverse }) => {
+  return (
+    <div
+      className={`flex flex-col md:flex-row ${
+        reverse ? "md:flex-row-reverse" : ""
+      } items-center gap-8`}
+    >
+      <div className="flex-1">
+        <img
+          src={image}
+          alt={title}
+          className="highlight-image rounded-lg shadow-lg"
+        />
+      </div>
+      <div className="flex-1 space-y-4">
+        <h3 className="text-3xl font-semibold font-catchy">{title}</h3>
+        <p className="text-2xl font-serif">{content}</p>
       </div>
     </div>
   );

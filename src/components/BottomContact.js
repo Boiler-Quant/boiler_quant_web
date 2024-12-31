@@ -25,7 +25,7 @@ const BottomContact = () => {
               alt="Instagram"
               className="h-10 w-10"
             />
-            <p className="text-lg ml-2">@boilerquant</p>
+            <p className="text-lg ml-2">Follow Us on Instagram</p>
           </div>
         </a>
         <a
@@ -39,7 +39,7 @@ const BottomContact = () => {
               alt="LinkedIn"
               className="h-10 w-10"
             />
-            <p className="text-lg ml-2">Follow us on LinkedIn</p>
+            <p className="text-lg ml-2">Connect with Us on LinkedIn</p>
           </div>
         </a>
 
@@ -50,7 +50,7 @@ const BottomContact = () => {
         >
           <div className="flex items-center hover:opacity-70">
             <img src="/mail-logo.png" alt="Email" className="h-10 w-10" />
-            <p className="text-lg ml-2">boilerquant@purdue.edu</p>
+            <p className="text-lg ml-2">boilerquant@gmail.com</p>
           </div>
         </a>
       </div>

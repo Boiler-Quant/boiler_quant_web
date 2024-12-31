@@ -7,16 +7,21 @@ const About = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const getData = async () => {
+    async function fetchData() {
       try {
-        const records = await fetchAirtableData();
-        setData(records);
+        const response = await fetch("/api/fetchData?tableName=Executive"); // Use relative path
+        if (!response.ok) {
+          throw new Error("Error fetching data");
+        }
+
+        const result = await response.json();
+        setData(result.records); // Airtable returns data in a `records` array
       } catch (err) {
         setError(err.message);
       }
-    };
+    }
 
-    getData();
+    fetchData();
   }, []);
 
   useEffect(() => {

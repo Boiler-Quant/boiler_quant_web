@@ -20,7 +20,7 @@ const Main = () => {
             Empowering Tomorrow's Financial Leaders
           </h1>
           <p className="mt-4 text-lg sm:text-2xl">
-            Join us to explore the future of finance at Purdue.
+            Join us to explore the future quant at Purdue.
           </p>
         </div>
 

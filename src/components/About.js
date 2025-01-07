@@ -45,10 +45,10 @@ const About = ({ data }) => {
           </div>
         </section>
 
-        <h2 className="text-2xl sm:text-4xl font-bold font-catchy mb-10 mt-3">
+        <h2 className="text-4xl sm:text-6xl font-bold font-catchy mb-10 mt-3 text-center">
           2025 Executive Board
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-6 gap-8 px-24 items-center">
           {data.map((exec, index) => (
             <Card2 exec={exec} index={index} />
           ))}
@@ -116,7 +116,12 @@ const Card1 = ({ exec, index }) => {
 
 const Card2 = ({ exec, index }) => {
   return (
-    <div key={index} className="p-10 flex flex-col max-w-lg">
+    <div
+      key={index}
+      className={`${
+        index < 2 ? "col-span-3" : "col-span-2"
+      } p-10 flex flex-col max-w-lg w-full mx-auto`}
+    >
       {/* Name and Position */}
       <div>
         <h3 className="text-3xl font-bold font-frank">

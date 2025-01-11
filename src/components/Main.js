@@ -109,13 +109,13 @@ const Main = () => {
       <section className="py-40 px-20 bg-gray-100 text-center">
         <h2 className="text-5xl font-bold mb-8 font-catchy">Join Us</h2>
         <p className="text-2xl mb-12">
-          The application for 2025 Spring is open! Check the details below.
+          The application for 2025 Spring will be open on Jan. 19th, 2025!
         </p>
         <Link
           to="/join-us"
           className={`inline-block ${theme.highlight} text-white text-lg font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors`}
         >
-          Apply Now
+          Learn More
         </Link>
       </section>
 

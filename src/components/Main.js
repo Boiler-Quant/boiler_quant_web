@@ -46,13 +46,13 @@ const Main = () => {
 
       {/* About Us Section */}
       <section className="py-40 px-20 bg-gray-100 flex flex-col items-center w-full">
-        <h2 className="text-5xl font-bold mb-12 font-frank">About Us</h2>
+        <h2 className="text-5xl font-bold mb-12 font-frank">What We Do</h2>
         <div className="container space-y-16">
           <hr className="my-12 border-gray-800" />
           {/* Section 1 */}
           <Section
             title="Networking Opportunities"
-            content="We connect Purdue students with top financial firms and industry leaders through networking events and speaker series."
+            content="We connect Purdue students with top quant firms and industry leaders through speaker series and company visits."
             animation="slideInLeft"
           />
 
@@ -61,8 +61,8 @@ const Main = () => {
 
           {/* Section 2 */}
           <Section
-            title="Skill Development"
-            content="Participate in workshops and case studies to enhance your financial analysis, investment, and quantitative skills."
+            title="Interview Preparation"
+            content="Participate in workshops and weekly meetings to practice quant interviews, focusing on probabilities, math, and programming."
             animation="slideInRight"
           />
 
@@ -72,7 +72,7 @@ const Main = () => {
           {/* Section 3 */}
           <Section
             title="Community Building"
-            content="Join a community of like-minded students passionate about finance, and collaborate on impactful projects and initiatives."
+            content="Join a community of like-minded students passionate about quant, and collaborate on impactful projects."
             animation="slideInLeft"
           />
         </div>

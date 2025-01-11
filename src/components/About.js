@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useTheme } from "../theme-context";
-import { fetchAirtableData } from "../utils/airtableService";
 
 const About = ({ data }) => {
   const theme = useTheme();
@@ -10,7 +9,11 @@ const About = ({ data }) => {
       {/* Top Banner */}
       <div className="relative aspect-[2/1] flex flex-col items-center justify-center bg-black text-white">
         {/* Image */}
-        <img className="w-1/4" src="bq_logo_white.png" />
+        <img
+          className="w-1/4"
+          src="bq_logo_white.png"
+          alt="boiler quant logo"
+        />
         {/* Caption */}
         <p className="mt-4 text-3xl font-semibold font-catchy">
           Your Companion to Quant Finance
@@ -43,9 +46,14 @@ const About = ({ data }) => {
         <h2 className="text-4xl sm:text-6xl font-bold font-catchy mb-10 mt-3 text-center">
           2025 Executive Board
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-6 gap-8 px-24 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1 gap-12 px-8 items-stretch">
           {data.map((exec, index) => (
-            <Card2 exec={exec} index={index} />
+            <div
+              key={index}
+              className={`flex flex-col max-w-lg w-full mx-auto `}
+            >
+              <Card2 exec={exec} index={index} />
+            </div>
           ))}
         </div>
       </div>
@@ -66,62 +74,17 @@ const Section = ({ title, content }) => {
   );
 };
 
-const Card1 = ({ exec, index }) => {
-  return (
-    <div
-      key={index}
-      className="bg-white bg-opacity-0 shadow-lg p-6 flex flex-col border border-white"
-    >
-      <div className="flex">
-        <div
-          className="mr-6"
-          style={{
-            flex: "0 0 40%",
-            aspectRatio: "3/4",
-            backgroundImage: `url(${exec["fields"]["Photo"][0]["url"]})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-        <div className="flex-1">
-          <h3 className="text-xl font-semibold mb-2 font-frank">
-            {exec["fields"]["Full Name"]}
-          </h3>
-          <p className="text-white mb-2">{exec["fields"]["Role"]}</p>
-          <p className="text-white mb-2">{exec["fields"]["Major"]}</p>
-        </div>
-      </div>
-
-      {/* Text Content */}
-      <div className="mt-4">
-        <p className="text-white">: {exec["fields"]["Interests"]}</p>
-        <a
-          href={exec["fields"]["LinkedIn"]}
-          className="text-blue-400 hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Connect on LinkedIn
-        </a>
-      </div>
-    </div>
-  );
-};
-
 const Card2 = ({ exec, index }) => {
   return (
-    <div
-      key={index}
-      className={`${
-        index < 2 ? "col-span-3" : "col-span-2"
-      } p-10 flex flex-col max-w-lg w-full mx-auto`}
-    >
+    <div key={index} className={`flex flex-col max-w-lg w-full mx-auto`}>
       {/* Name and Position */}
       <div>
-        <h3 className="text-3xl font-bold font-frank pb-3">
+        <h3 className="text-3xl font-bold font-frank pb-2">
           {exec["fields"]["Full Name"]}
         </h3>
-        <p className="text-xl text-white">{exec["fields"]["Role"]}</p>
+        <p className="text-xl font-semibold font-serif text-white">
+          {exec["fields"]["Role"]}
+        </p>
       </div>
 
       <hr className="my-5 border-gray-300 opacity-30" />
@@ -139,15 +102,15 @@ const Card2 = ({ exec, index }) => {
 
       {/* Description */}
       <div>
-        <p className="text-2xl font-semibold text-white mb-3">
+        <p className="text-2xl font-semibold text-white mb-3 font-serif">
           {exec["fields"]["Major"]}
         </p>
-        <p className="text-white mb-3 text-xl">
+        <p className="text-white mb-3 text-xl font-serif">
           Interests: {exec["fields"]["Interests"]}
         </p>
         <a
           href={exec["fields"]["LinkedIn"]}
-          className="text-blue-400 hover:underline text-xl"
+          className="text-blue-400 hover:underline text-xl cursor-pointer"
           target="_blank"
           rel="noopener noreferrer"
         >

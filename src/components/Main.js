@@ -45,8 +45,8 @@ const Main = () => {
       </div>
 
       {/* About Us Section */}
-      <section className="py-40 px-20 bg-gray-100">
-        <h2 className="text-5xl font-bold mb-12 font-catchy">About Us</h2>
+      <section className="py-40 px-20 bg-gray-100 flex flex-col items-center w-full">
+        <h2 className="text-5xl font-bold mb-12 font-frank">About Us</h2>
         <div className="container space-y-16">
           <hr className="my-12 border-gray-800" />
           {/* Section 1 */}
@@ -79,8 +79,8 @@ const Main = () => {
       </section>
 
       {/* Club Highlights Section */}
-      <section className="py-40 px-20 bg-white">
-        <h2 className="text-5xl font-bold mb-12 font-catchy">
+      <section className="py-40 px-20 flex flex-col items-center bg-white">
+        <h2 className="text-5xl font-bold mb-12 font-frank">
           Fall `24 Highlights
         </h2>
         <div className="container space-y-16">
@@ -188,7 +188,7 @@ const Section = ({ title, content, animation }) => {
       }}
     >
       <div className="space-y-4">
-        <h3 className="text-3xl font-semibold font-catchy">{title}</h3>
+        <h3 className="text-3xl font-semibold font-frank">{title}</h3>
         <p className="text-2xl font-serif">{content}</p>
       </div>
     </div>
@@ -210,7 +210,7 @@ const Highlight = ({ image, title, content, reverse }) => {
         />
       </div>
       <div className="flex-1 space-y-4">
-        <h3 className="text-3xl font-semibold font-catchy">{title}</h3>
+        <h3 className="text-3xl font-semibold font-frank">{title}</h3>
         <p className="text-2xl font-serif">{content}</p>
       </div>
     </div>

@@ -12,7 +12,7 @@ const About = ({ data }) => {
         {/* Image */}
         <img className="w-1/4" src="bq_logo_white.png" />
         {/* Caption */}
-        <p className="mt-4 text-lg font-semibold font-catchy">
+        <p className="mt-4 text-3xl font-semibold font-catchy">
           Your Companion to Quant Finance
         </p>
       </div>
@@ -23,25 +23,20 @@ const About = ({ data }) => {
             What We Do
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 justify-center">
-            {/* Section 1 */}
             <Section
               title="Networking Opportunities"
-              content="We connect Purdue students with top financial firms and industry leaders through networking events and speaker series."
+              content="We connect Purdue students with top quant firms and industry leaders through speaker series and company visits."
             />
 
-            {/* Section 2 */}
             <Section
-              title="Skill Development"
-              content="Participate in workshops and case studies to enhance your financial analysis, investment, and quantitative skills."
+              title="Interview Preparation"
+              content="Participate in workshops and weekly meetings to practice quant interviews, focusing on probabilities, math, and programming."
             />
 
             <Section
               title="Community Building"
-              content="Join a community of like-minded students passionate about finance, and collaborate on impactful projects and initiatives."
+              content="Join a community of like-minded students passionate about quant, and collaborate on impactful projects."
             />
-
-            {/* Section 3 */}
-            <Section title="" content="" />
           </div>
         </section>
 
@@ -99,8 +94,7 @@ const Card1 = ({ exec, index }) => {
 
       {/* Text Content */}
       <div className="mt-4">
-        <p className="text-white mb-3">Some Description Placeholder</p>
-        <p className="text-white">Fun Fact: {exec["fields"]["Interests"]}</p>
+        <p className="text-white">: {exec["fields"]["Interests"]}</p>
         <a
           href={exec["fields"]["LinkedIn"]}
           className="text-blue-400 hover:underline"
@@ -124,7 +118,7 @@ const Card2 = ({ exec, index }) => {
     >
       {/* Name and Position */}
       <div>
-        <h3 className="text-3xl font-bold font-frank">
+        <h3 className="text-3xl font-bold font-frank pb-3">
           {exec["fields"]["Full Name"]}
         </h3>
         <p className="text-xl text-white">{exec["fields"]["Role"]}</p>
@@ -145,14 +139,15 @@ const Card2 = ({ exec, index }) => {
 
       {/* Description */}
       <div>
-        <p className="text-xl text-white mb-3">{exec["fields"]["Major"]}</p>
-        <p className="text-white mb-3">Some Description Placeholder</p>
-        <p className="text-white mb-3">
-          Fun Fact: {exec["fields"]["Interests"]}
+        <p className="text-2xl font-semibold text-white mb-3">
+          {exec["fields"]["Major"]}
+        </p>
+        <p className="text-white mb-3 text-xl">
+          Interests: {exec["fields"]["Interests"]}
         </p>
         <a
           href={exec["fields"]["LinkedIn"]}
-          className="text-blue-400 hover:underline"
+          className="text-blue-400 hover:underline text-xl"
           target="_blank"
           rel="noopener noreferrer"
         >

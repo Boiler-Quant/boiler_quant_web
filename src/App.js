@@ -7,10 +7,12 @@ import Main from "./components/Main";
 import About from "./components/About";
 import BottomContact from "./components/BottomContact";
 import Projects from "./components/Projects";
+import InProgressPage from "./components/InProgressPage";
 
 import { ThemeProvider, useTheme } from "./theme-context";
 import "./fonts.css";
 import "./App.css";
+import JoinUs from "./components/JoinUs";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -47,6 +49,8 @@ const App = () => {
             <Route path="/" element={<Main />} />
             <Route path="/about-us" element={<About data={data} />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/quizzes" element={<InProgressPage />} />
+            <Route path="/join-us" element={<JoinUs />} />
           </Routes>
         </div>
       </Router>

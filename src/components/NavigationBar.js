@@ -41,7 +41,7 @@ const NavigationBar = () => {
         </Link>
       </div>
       <div
-        className={`flex space-x-8 text-lg sm:text-2xl font-catchy ${theme.text}`}
+        className={`flex space-x-8 text-lg sm:text-2xl font-frank ${theme.text}`}
       >
         <Link
           to="/about-us"
@@ -66,14 +66,6 @@ const NavigationBar = () => {
           }`}
         >
           Quizzes
-        </Link>
-        <Link
-          to="/archive"
-          className={`hover:underline ${
-            isActive("/archive") ? theme.highlightText + " underline" : ""
-          }`}
-        >
-          Archive
         </Link>
         <Link
           to="/join-us"

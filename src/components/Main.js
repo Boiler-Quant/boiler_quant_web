@@ -15,9 +15,11 @@ const Main = () => {
           backgroundImage: `url('/purdue_image.jpg')`, // Main hero image
         }}
       >
-        <div className="absolute bottom-16 left-10 sm:left-20 right-10 sm:right-20 text-white font-catchy">
+        <div
+          className={`absolute bottom-16 left-10 sm:left-20 right-10 sm:right-20 ${theme.text_white} font-frank`}
+        >
           <h1 className="text-4xl sm:text-6xl font-bold">
-            Empowering Tomorrow's Financial Leaders
+            PURDUE'S LEADING QUANT FINANCE COMMUNITY
           </h1>
           <p className="mt-4 text-lg sm:text-2xl">
             Join us to explore the future quant at Purdue.
@@ -85,23 +87,23 @@ const Main = () => {
         </h2>
         <div className="container space-y-16">
           <Highlight
-            image="/purdue_image.jpg"
-            title="Exclusive Speaker Sessions"
-            content="Gain insights from industry leaders who share their journeys and advice for aspiring financial professionals."
+            image="/project_presentation_day.jpg"
+            title="Project Presentation Day"
+            content="We had a total 6 projects completed in Fall 2024! Find more about the projects here."
           />
           {/* Highlight 2 */}
           <Highlight
-            image="/purdue_image.jpg"
-            title="Case Competitions"
-            content="Showcase your analytical and problem-solving skills by participating in high-stakes competitions."
+            image="/chicago_office_tours.jpg"
+            title="Chicago Office Tours"
+            content="We had a fortune to visit four quant companies (WH Trading, Old Mission, Akuna Capital, and Belvedere Trading) in Chicago."
             reverse
           />
           {/* Highlight 3 */}
           <Highlight
-            image="/purdue_image.jpg"
-            title="Social Events"
-            content="Build connections and unwind at our fun and engaging social events designed for all members."
-          />{" "}
+            image="/competitive_games.jpg"
+            title="Competitive Games"
+            content="Throughout the semester, we played several games to enhance probablistic thinking."
+          />
         </div>
       </section>
 
@@ -109,11 +111,11 @@ const Main = () => {
       <section className="py-40 px-20 bg-gray-100 text-center">
         <h2 className="text-5xl font-bold mb-8 font-catchy">Join Us</h2>
         <p className="text-2xl mb-12">
-          The application for 2025 Spring will be open on Jan. 19th, 2025!
+          The application for 2025 Spring will be open on January 19th, 2025!
         </p>
         <Link
           to="/join-us"
-          className={`inline-block ${theme.highlight} text-white text-lg font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors`}
+          className={`inline-block ${theme.aged} ${theme.text_black} text-lg font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors`}
         >
           Learn More
         </Link>

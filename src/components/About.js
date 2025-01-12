@@ -7,22 +7,24 @@ const About = ({ data }) => {
   return (
     <div>
       {/* Top Banner */}
-      <div className="relative aspect-[2/1] flex flex-col items-center justify-center bg-black text-white">
+      <div
+        className={`relative aspect-[2/1] flex flex-col items-center justify-center ${theme.background} ${theme.text_white}`}
+      >
         {/* Image */}
         <img
           className="w-1/4"
-          src="bq_logo_white.png"
+          src="submark_white_transparent.png"
           alt="boiler quant logo"
         />
         {/* Caption */}
-        <p className="mt-4 text-3xl font-semibold font-catchy">
-          Your Companion to Quant Finance
+        <p className="mt-4 text-3xl font-semibold font-frank">
+          PURDUE'S LEADING QUANT FINANCE COMMUNITY
         </p>
       </div>
 
-      <div className={`py-24 px-10 ${theme.background} ${theme.text}`}>
-        <section className="pb-24 w-full">
-          <h2 className="text-5xl font-bold font-frank mb-10 mt-3">
+      <div className={`py-14 px-10 bg-gray-200 ${theme.text_black}`}>
+        <section className="w-full">
+          <h2 className="text-5xl font-bold font-frank pb-10 pt-3">
             What We Do
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 justify-center">
@@ -42,8 +44,10 @@ const About = ({ data }) => {
             />
           </div>
         </section>
+      </div>
 
-        <h2 className="text-4xl sm:text-6xl font-bold font-catchy mb-10 mt-3 text-center">
+      <div className={`py-14 px-10 bg-gray-100 ${theme.text_black}`}>
+        <h2 className="text-4xl sm:text-6xl font-bold font-catchy mb-10 text-center">
           2025 Executive Board
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 xl:grid-cols-5 xl:grid-rows-1 gap-12 px-8 items-stretch">
@@ -82,12 +86,12 @@ const Card2 = ({ exec, index }) => {
         <h3 className="text-3xl font-bold font-frank pb-2">
           {exec["fields"]["Full Name"]}
         </h3>
-        <p className="text-xl font-semibold font-serif text-white">
+        <p className="text-xl font-semibold font-serif">
           {exec["fields"]["Role"]}
         </p>
       </div>
 
-      <hr className="my-5 border-gray-300 opacity-30" />
+      <hr className="my-5 border-gray-900 opacity-30" />
 
       {/* Image */}
       <div
@@ -102,10 +106,10 @@ const Card2 = ({ exec, index }) => {
 
       {/* Description */}
       <div>
-        <p className="text-2xl font-semibold text-white mb-3 font-serif">
+        <p className="text-2xl font-semibold mb-3 font-serif">
           {exec["fields"]["Major"]}
         </p>
-        <p className="text-white mb-3 text-xl font-serif">
+        <p className=" mb-3 text-xl font-serif">
           Interests: {exec["fields"]["Interests"]}
         </p>
         <a

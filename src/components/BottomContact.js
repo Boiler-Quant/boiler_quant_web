@@ -5,10 +5,14 @@ const BottomContact = () => {
   const theme = useTheme();
 
   return (
-    <div className={`py-20 px-10 ${theme.secondary} flex text-black`}>
+    <div className={`py-20 px-10 ${theme.dust} flex text-black`}>
       {/* Left Section: Logo and Name */}
       <div className="flex flex-col items-center justify-center w-1/2 space-y-2">
-        <img src="/bq_logo_black.png" alt="Quant Club Logo" className="w-32" />
+        <img
+          src="/submark_black_transparent.png"
+          alt="Quant Club Logo"
+          className="w-32"
+        />
         <h2 className="text-3xl font-catchy">Boiler Quant</h2>
       </div>
 

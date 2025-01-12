@@ -34,19 +34,28 @@ const NavigationBar = () => {
       <div className="flex items-center">
         <Link to="/">
           <img
-            src="/bq_logo_white.png"
+            src="/submark_white_transparent.png"
             alt="Quant Club Logo"
             className="h-12 sm:h-16"
           />
         </Link>
       </div>
       <div
-        className={`flex space-x-8 text-lg sm:text-2xl font-frank ${theme.text}`}
+        className={`flex space-x-8 text-lg sm:text-2xl font-frank ${theme.text_white}`}
       >
+        <Link
+          to="/"
+          className={`hover:underline ${
+            isActive("/") ? theme.text_white + " underline" : ""
+          }`}
+        >
+          Home
+        </Link>
+
         <Link
           to="/about-us"
           className={`hover:underline ${
-            isActive("/about-us") ? theme.highlightText + " underline" : ""
+            isActive("/about-us") ? theme.text_white + " underline" : ""
           }`}
         >
           About Us
@@ -54,7 +63,7 @@ const NavigationBar = () => {
         <Link
           to="/projects"
           className={`hover:underline ${
-            isActive("/projects") ? theme.highlightText + " underline" : ""
+            isActive("/projects") ? theme.text_white + " underline" : ""
           }`}
         >
           Projects
@@ -62,7 +71,7 @@ const NavigationBar = () => {
         <Link
           to="/quizzes"
           className={`hover:underline ${
-            isActive("/quizzes") ? theme.highlightText + " underline" : ""
+            isActive("/quizzes") ? theme.text_white + " underline" : ""
           }`}
         >
           Quizzes
@@ -70,7 +79,7 @@ const NavigationBar = () => {
         <Link
           to="/join-us"
           className={`hover:underline ${
-            isActive("/join-us") ? theme.highlightText + " underline" : ""
+            isActive("/join-us") ? theme.text_white + " underline" : ""
           }`}
         >
           Join Us

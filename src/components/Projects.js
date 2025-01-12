@@ -37,7 +37,7 @@ const Projects = () => {
   };
 
   return (
-    <div className={`py-24 px-10 ${theme.background} ${theme.text}`}>
+    <div className={`py-24 px-10 ${theme.background} ${theme.text_white}`}>
       <h2 className="text-2xl sm:text-4xl font-bold font-catchy mb-10 mt-4">
         Fall `24 Projects
       </h2>
@@ -57,7 +57,7 @@ const Projects = () => {
                   {project.chips.map((chip, index) => (
                     <span
                       key={index}
-                      className={`bg-gray-700, text-white text-sm px-3 py-1 rounded-full ${theme.highlight}`}
+                      className={`bg-gray-700, text-white text-sm px-3 py-1 rounded-full ${theme.dust}`}
                     >
                       {chip}
                     </span>

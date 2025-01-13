@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import Home from "./pages/Home/Home";
-import About from "./components/About";
+import About from "./pages/AboutUs/About";
 import BottomContact from "./components/BottomContact";
 import Projects from "./components/Projects";
 import InProgressPage from "./components/InProgressPage";

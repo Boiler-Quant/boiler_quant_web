@@ -89,20 +89,20 @@ const Main = () => {
           <Highlight
             image="/project_presentation_day.jpg"
             title="Project Presentation Day"
-            content="We had a total 6 projects completed in Fall 2024! Find more about the projects here."
+            content="This past semester we had 6 total projects, see more information below."
           />
           {/* Highlight 2 */}
           <Highlight
             image="/chicago_office_tours.jpg"
             title="Chicago Office Tours"
-            content="We had a fortune to visit four quant companies (WH Trading, Old Mission, Akuna Capital, and Belvedere Trading) in Chicago."
+            content="On our Chicago Trek, we were fortune to visit Old Mission, WH Trading, Belvedere, and Akuna Capital."
             reverse
           />
           {/* Highlight 3 */}
           <Highlight
             image="/competitive_games.jpg"
             title="Competitive Games"
-            content="Throughout the semester, we played several games to enhance probablistic thinking."
+            content="Throughout the semester, we played various games to improve probabilistic thinking and decision making under uncertainty."
           />
         </div>
       </section>

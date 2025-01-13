@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTheme } from "../theme-context";
 
 const About = ({ data }) => {
   const theme = useTheme();
+  useEffect(() => {
+    const syncSectionHeights = () => {
+      const sectionGroups = ["section-1", "section-2", "section-3"];
+
+      sectionGroups.forEach((group) => {
+        const elements = document.querySelectorAll(`.${group}`);
+        let maxHeight = 0;
+
+        // Reset height to auto to recalculate
+        elements.forEach((el) => (el.style.height = "auto"));
+
+        // Find the tallest element
+        elements.forEach((el) => {
+          const height = el.offsetHeight;
+          if (height > maxHeight) maxHeight = height;
+        });
+
+        // Set all elements to the tallest height
+        elements.forEach((el) => (el.style.height = `${maxHeight}px`));
+      });
+    };
+
+    // Sync heights on load and resize
+    syncSectionHeights();
+    window.addEventListener("resize", syncSectionHeights);
+
+    return () => window.removeEventListener("resize", syncSectionHeights);
+  }, []);
 
   return (
     <div>
@@ -49,7 +77,7 @@ const About = ({ data }) => {
         </section>
       </div>
 
-      <div className={`py-14 px-10 bg-gray-200 ${theme.text_black}`}>
+      {/* <div className={`py-14 px-10 bg-gray-200 ${theme.text_black}`}>
         <section className="w-full">
           <h2 className="text-5xl font-bold font-frank pb-10 pt-3">
             What We Do
@@ -71,9 +99,9 @@ const About = ({ data }) => {
             />
           </div>
         </section>
-      </div>
+      </div> */}
 
-      <div className={`py-14 px-10 bg-gray-100 ${theme.text_black}`}>
+      <div className={`py-14 px-10 bg-gray-200 ${theme.text_black}`}>
         <h2 className="text-4xl sm:text-6xl font-bold font-catchy mb-10 text-center">
           2025 Executive Board
         </h2>
@@ -109,7 +137,7 @@ const Card2 = ({ exec, index }) => {
   return (
     <div key={index} className={`flex flex-col max-w-lg w-full mx-auto`}>
       {/* Name and Position */}
-      <div>
+      <div className="section-1">
         <h3 className="text-3xl font-bold font-frank pb-2">
           {exec["fields"]["Full Name"]}
         </h3>
@@ -118,21 +146,23 @@ const Card2 = ({ exec, index }) => {
         </p>
       </div>
 
-      <hr className="my-5 border-gray-900 opacity-30" />
-
       {/* Image */}
-      <div
-        className="mx-auto mb-4 px-4 w-full"
-        style={{
-          aspectRatio: "1/1", // Maintain aspect ratio
-          backgroundImage: `url(${exec["fields"]["Photo"][0]["url"]})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
+      <div className="section-2">
+        <hr className="my-5 border-gray-900 opacity-30" />
+
+        <div
+          className="mx-auto mb-4 px-4 w-full"
+          style={{
+            aspectRatio: "1/1", // Maintain aspect ratio
+            backgroundImage: `url(${exec["fields"]["Photo"][0]["url"]})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+      </div>
 
       {/* Description */}
-      <div>
+      <div className="section-3">
         <p className="text-2xl font-semibold mb-3 font-serif">
           {exec["fields"]["Major"]}
         </p>

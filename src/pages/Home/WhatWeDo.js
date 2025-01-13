@@ -102,8 +102,8 @@ const Section = ({ title, content, animation }) => {
       }}
     >
       <div className="space-r-y-4">
-        <h3 className="text-r-base font-semibold font-frank">{title}</h3>
-        <p className="text-r-sm font-serif">{content}</p>
+        <h3 className="text-r-base-4xl font-semibold font-frank">{title}</h3>
+        <p className="text-r-sm-3xl font-serif">{content}</p>
       </div>
     </div>
   );

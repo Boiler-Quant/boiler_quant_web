@@ -12,10 +12,10 @@ const HeroSection = () => {
       <div
         className={`absolute bottom-r-4 px-r-5 ${theme.text_white} font-frank`}
       >
-        <h1 className="text-r-lg font-bold">
+        <h1 className="text-r-lg lg:pb-3 font-bold">
           PURDUE'S LEADING QUANT FINANCE COMMUNITY
         </h1>
-        <p className="text-r-sm">
+        <p className="text-r-sm-3xl">
           Join us to explore the future of quant at Purdue.
         </p>
       </div>

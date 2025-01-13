@@ -22,7 +22,7 @@ const Main = () => {
       {/* Join Us Section */}
       <section className="py-r-10 px-r-5 bg-gray-100 text-center">
         <h2 className="text-r-lg font-bold mb-r-2 font-catchy">Join Us</h2>
-        <p className="text-r-sm mb-r-3">
+        <p className="text-r-sm-3xl mb-r-3">
           The application for 2025 Spring will be open on January 19th, 2025!
         </p>
         <Link

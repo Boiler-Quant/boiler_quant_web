@@ -10,8 +10,14 @@
   .text-r-base {
     @apply text-base sm:text-lg lg:text-2xl;
   }
+  .text-r-base-4xl {
+    @apply text-base sm:text-xl lg:text-4xl;
+  }
   .text-r-sm {
     @apply text-sm sm:text-lg lg:text-xl;
+  }
+  .text-r-sm-3xl {
+    @apply text-sm sm:text-lg lg:text-3xl;
   }
   .text-r-xs {
     @apply text-xs sm:text-sm lg:text-lg;

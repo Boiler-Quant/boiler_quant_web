@@ -43,8 +43,8 @@ const Highlight = ({ image, title, content, reverse }) => {
         />
       </div>
       <div className="flex-1 space-r-y-1">
-        <h3 className="text-r-base font-semibold font-frank">{title}</h3>
-        <p className="text-r-sm font-serif">{content}</p>
+        <h3 className="text-r-base-4xl font-semibold font-frank">{title}</h3>
+        <p className="text-r-sm-3xl font-serif">{content}</p>
       </div>
     </div>
   );

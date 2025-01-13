@@ -22,7 +22,7 @@ const Main = () => {
             PURDUE'S LEADING QUANT FINANCE COMMUNITY
           </h1>
           <p className="mt-4 text-lg sm:text-2xl">
-            Join us to explore the future quant at Purdue.
+            Join us to explore the future of quant at Purdue.
           </p>
         </div>
 

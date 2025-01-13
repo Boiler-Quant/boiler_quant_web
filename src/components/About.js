@@ -22,6 +22,33 @@ const About = ({ data }) => {
         </p>
       </div>
 
+      <div className={`py-14 px-10 bg-gray-100 ${theme.text_black}`}>
+        <section className="w-full">
+          <h2 className="text-5xl font-bold font-frank pt-5 pb-6">
+            Our Mission
+          </h2>
+          <p className="text-2xl font-serif py-3">
+            At Boiler Quant, we are driven by a shared passion for exploring
+            quantitative finance.
+          </p>
+          <p className="text-2xl font-serif py-3">
+            We bring together enthusiastic students who are eager to dive into
+            the exciting intersection of finance, mathematics, and data science.
+          </p>
+          <p className="text-2xl font-serif py-3">
+            Our projects go beyond theory, immersing members in STEM-driven
+            research and projects that replicate real-world challenges. We
+            believe in the power of hands-on experience to transform knowledge
+            into expertise, and our members are the ones to make it happen.
+          </p>
+          <p className="text-2xl font-serif py-3">
+            Beyond projects, Boiler Quant is committed to education and career
+            development. We strive to enlighten and inspire the next generation
+            of quants.
+          </p>
+        </section>
+      </div>
+
       <div className={`py-14 px-10 bg-gray-200 ${theme.text_black}`}>
         <section className="w-full">
           <h2 className="text-5xl font-bold font-frank pb-10 pt-3">

@@ -1,7 +1,12 @@
 // React and Tailwind CSS setup for the Purdue Quantitative Finance Club Website
 
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import Main from "./components/Main";
 import About from "./components/About";
@@ -13,6 +18,19 @@ import { ThemeProvider, useTheme } from "./theme-context";
 import "./fonts.css";
 import "./App.css";
 import JoinUs from "./components/JoinUs";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
+  return null;
+};
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -43,6 +61,7 @@ const App = () => {
   return (
     <ThemeProvider>
       <Router>
+        <ScrollToTop />
         <div className="font-sans">
           <NavigationBar />
           <Routes>

@@ -1,59 +1,75 @@
-import React from "react";
+import * as React from "react";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 
-const Timeline = () => {
-  const events = [
-    {
-      date: "1/19",
-      title: "Applications Open",
-      time: "@ 11:59 PM",
-    },
-    {
-      date: "1/22",
-      title: "First Callout",
-      time: "7:30 PM RAWL 1062",
-    },
-    {
-      date: "1/24",
-      title: "Second Callout",
-      time: "7:30 PM RAWL 1062",
-    },
-    {
-      date: "1/25",
-      title: "Applications Due",
-      time: "@ 11:59 PM",
-    },
-    {
-      date: "1/28",
-      title: "Interviews Begin",
-      time: "",
-    },
-  ];
+const events = [
+  {
+    date: "1/19",
+    title: "APPLICATIONS OPEN",
+    time: "@ 11:59 PM",
+  },
+  {
+    date: "1/22",
+    title: "FIRST CALLOUT",
+    time: "@ 7:30PM RAWL 1062",
+  },
+  {
+    date: "1/24",
+    title: "SECOND CALLOUT",
+    time: "@ 7:30PM RAWL 1062",
+  },
+  {
+    date: "1/25",
+    title: "APPLICATIONS DUE",
+    time: "@ 11:59 PM",
+  },
+  {
+    date: "1/28",
+    title: "INTERVIEWS BEGIN",
+    time: "",
+  },
+];
 
+export default function AlternateTimeline() {
   return (
-    <div className="bg-black text-white p-8">
-      <div className="flex flex-col items-center">
-        {events.map((event, index) => (
-          <div key={index} className="flex items-center">
-            {/* Line and Circle */}
-            <div className="flex flex-col items-center">
-              {index !== 0 && <div className="h-10 w-1 bg-white"></div>}
-              <div className="h-4 w-4 rounded-full bg-white"></div>
-              {index !== events.length - 1 && (
-                <div className="h-10 w-1 bg-white"></div>
+    <Timeline position="alternate" className="w-full space-y-8">
+      {events.map((event, index) => (
+        <TimelineItem key={index} className="w-full">
+          <TimelineSeparator>
+            <TimelineDot className="w-10 h-10" />
+            {index < events.length - 1 && (
+              <TimelineConnector className="h-20 border-2 " />
+            )}
+          </TimelineSeparator>
+          <TimelineContent>
+            <div className="flex items-start ">
+              {/* Horizontal Line */}
+              {index % 2 === 0 && (
+                <hr className="w-16 border-gray-100 border-t-2 mt-5" />
+              )}
+
+              {/* Content */}
+              <div
+                className={`px-5 ${
+                  index % 2 === 1 ? "ml-auto text-right" : ""
+                }`}
+              >
+                <h1 className="text-4xl pb-2">{event.date}</h1>
+                <p className="text-xl">{event.title}</p>
+                <p className="text-xl">{event.time}</p>
+              </div>
+
+              {index % 2 === 1 && (
+                <hr className="w-16 border-gray-100 border-t-2 mt-5" />
               )}
             </div>
-
-            {/* Event Box */}
-            <div className="ml-4 mb-4">
-              <div className="text-xl font-semibold">{event.date}</div>
-              <div className="text-md">{event.title}</div>
-              {event.time && <div className="text-sm">{event.time}</div>}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+          </TimelineContent>
+        </TimelineItem>
+      ))}
+    </Timeline>
   );
-};
-
-export default Timeline;
+}

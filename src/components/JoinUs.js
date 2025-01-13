@@ -13,13 +13,15 @@ const JoinUs = () => {
       <h2 className="text-5xl font-bold font-frank mb-10 text-center">
         Spring 2025 Recruitment Timeline
       </h2>
-      {/* <Timeline /> */}
-      <div
+      <div className="pb-10">
+        <Timeline />
+      </div>
+      {/* <div
         className="relative w-full h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url('/recruitment.jpg')`, // Main hero image
         }}
-      />
+      /> */}
 
       {/* Apply Now Button
       <button

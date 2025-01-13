@@ -5,19 +5,19 @@ const BottomContact = () => {
   const theme = useTheme();
 
   return (
-    <div className={`py-20 px-10 ${theme.dust} flex text-black`}>
+    <div className={`py-r-5 px-r-2 ${theme.dust} flex text-black`}>
       {/* Left Section: Logo and Name */}
-      <div className="flex flex-col items-center justify-center w-1/2 space-y-2">
+      <div className="flex flex-col items-center justify-center w-1/2 space-r-y-1">
         <img
           src="/submark_black_transparent.png"
           alt="Quant Club Logo"
-          className="w-32"
+          className="w-r-8"
         />
-        <h2 className="text-3xl font-catchy">Boiler Quant</h2>
+        <h2 className="text-r-base font-catchy">Boiler Quant</h2>
       </div>
 
       {/* Right Section: Contact Links */}
-      <div className="flex flex-col items-center justify-center w-1/2 space-y-4 text-black">
+      <div className="flex flex-col items-center justify-center w-1/2 space-r-y-1 text-black">
         <a
           href="https://www.instagram.com/boilerquant/"
           target="_blank"
@@ -27,9 +27,9 @@ const BottomContact = () => {
             <img
               src="/instagram-logo.png"
               alt="Instagram"
-              className="h-10 w-10"
+              className="h-r-3 w-r-3"
             />
-            <p className="text-lg ml-2">Follow Us on Instagram</p>
+            <p className="text-r-xs ml-r-0-5">Follow Us on Instagram</p>
           </div>
         </a>
         <a
@@ -41,9 +41,9 @@ const BottomContact = () => {
             <img
               src="/linkedin-logo.png"
               alt="LinkedIn"
-              className="h-10 w-10"
+              className="h-r-3 w-r-3"
             />
-            <p className="text-lg ml-2">Connect with Us on LinkedIn</p>
+            <p className="text-r-xs ml-r-0-5">Connect with Us on LinkedIn</p>
           </div>
         </a>
 
@@ -53,8 +53,8 @@ const BottomContact = () => {
           rel="noopener noreferrer"
         >
           <div className="flex items-center hover:opacity-70">
-            <img src="/mail-logo.png" alt="Email" className="h-10 w-10" />
-            <p className="text-lg ml-2">boilerquant@gmail.com</p>
+            <img src="/mail-logo.png" alt="Email" className="h-r-3 w-r-3" />
+            <p className="text-r-xs ml-r-0-5">boilerquant@gmail.com</p>
           </div>
         </a>
       </div>

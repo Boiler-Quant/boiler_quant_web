@@ -8,7 +8,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
-import Main from "./components/Main";
+import Home from "./pages/Home/Home";
 import About from "./components/About";
 import BottomContact from "./components/BottomContact";
 import Projects from "./components/Projects";
@@ -18,6 +18,7 @@ import { ThemeProvider, useTheme } from "./theme-context";
 import "./fonts.css";
 import "./App.css";
 import JoinUs from "./components/JoinUs";
+import "./styles.css";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -62,16 +63,14 @@ const App = () => {
     <ThemeProvider>
       <Router>
         <ScrollToTop />
-        <div className="font-sans">
-          <NavigationBar />
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/about-us" element={<About data={data} />} />
-            <Route path="/projects" element={<InProgressPage />} />
-            <Route path="/quizzes" element={<InProgressPage />} />
-            <Route path="/join-us" element={<JoinUs />} />
-          </Routes>
-        </div>
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<About data={data} />} />
+          <Route path="/projects" element={<InProgressPage />} />
+          <Route path="/quizzes" element={<InProgressPage />} />
+          <Route path="/join-us" element={<JoinUs />} />
+        </Routes>
       </Router>
       <BottomContact />
     </ThemeProvider>

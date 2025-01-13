@@ -29,25 +29,24 @@ const NavigationBar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 p-6 flex justify-between items-center text-xl transition-all duration-300 ${navBackground}`}
+      className={`flex fixed top-0 left-0 w-screen p-r-3 z-50 justify-between transition-all duration-300 ${navBackground}`}
+      style={{ boxSizing: "border-box" }}
     >
-      <div className="flex items-center">
+      <div className="flex">
         <Link to="/">
           <img
             src="/submark_white_transparent.png"
             alt="Quant Club Logo"
-            className="h-12 sm:h-16"
+            className="h-r-6"
           />
         </Link>
       </div>
       <div
-        className={`flex space-x-8 text-lg sm:text-2xl font-frank ${theme.text_white}`}
+        className={`flex items-center space-r-x-3 text-r-menu font-frank ${theme.text_white}`}
       >
         <Link
           to="/"
-          className={`hover:underline ${
-            isActive("/") ? theme.text_white + " underline" : ""
-          }`}
+          className={`hover:underline ${isActive("/") ? "underline" : ""}`}
         >
           Home
         </Link>
@@ -55,7 +54,7 @@ const NavigationBar = () => {
         <Link
           to="/about-us"
           className={`hover:underline ${
-            isActive("/about-us") ? theme.text_white + " underline" : ""
+            isActive("/about-us") ? "underline" : ""
           }`}
         >
           About Us
@@ -63,7 +62,7 @@ const NavigationBar = () => {
         <Link
           to="/projects"
           className={`hover:underline ${
-            isActive("/projects") ? theme.text_white + " underline" : ""
+            isActive("/projects") ? "underline" : ""
           }`}
         >
           Projects
@@ -71,7 +70,7 @@ const NavigationBar = () => {
         <Link
           to="/quizzes"
           className={`hover:underline ${
-            isActive("/quizzes") ? theme.text_white + " underline" : ""
+            isActive("/quizzes") ? "underline" : ""
           }`}
         >
           Quizzes
@@ -79,7 +78,7 @@ const NavigationBar = () => {
         <Link
           to="/join-us"
           className={`hover:underline ${
-            isActive("/join-us") ? theme.text_white + " underline" : ""
+            isActive("/join-us") ? "underline" : ""
           }`}
         >
           Join Us

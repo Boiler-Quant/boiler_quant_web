@@ -22,7 +22,7 @@ const HighlightGroup = () => {
           theme={theme}
           image="/chicago_office_tours.jpg"
           title="Chicago Office Tours"
-          content="On our Chicago Trek, we were fortune to visit Old Mission, WH Trading, Belvedere, and Akuna Capital."
+          content="On our Chicago Trek, we were fortunate to visit Old Mission, WH Trading, Belvedere, and Akuna Capital."
           reverse
         />
         {/* Highlight 3 */}

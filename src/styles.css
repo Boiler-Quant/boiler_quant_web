@@ -65,6 +65,9 @@
   .space-r-y-1 {
     @apply space-y-1 sm:space-y-2 lg:space-y-4;
   }
+  .space-r-y-2 {
+    @apply space-y-2 sm:space-y-4 lg:space-y-8;
+  }
   .space-r-y-4 {
     @apply space-y-4 sm:space-y-8 lg:space-y-16;
   }
@@ -116,18 +119,28 @@
   }
 
   /* w */
+  .w-r-3 {
+    @apply w-3   sm:w-6 lg:w-12;
+  }
+  .w-r-4 {
+    @apply w-4 sm:w-8 lg:w-16;
+  }
   .w-r-8 {
     @apply w-8 sm:w-16 lg:w-32;
-  }
-  .w-r-3 {
-    @apply w-3 sm:w-6 lg:w-12;
   }
 
   /* h */
   .h-r-3 {
     @apply h-3 sm:h-6 lg:h-12;
   }
+  .h-r-4 {
+    @apply h-4 sm:h-8 lg:h-16;
+  }
   .h-r-6 {
     @apply h-6 sm:h-12 lg:h-16;
+  }
+
+  .border-r-2 {
+    @apply border-1 lg:border-2;
   }
 }

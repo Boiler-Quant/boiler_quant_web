@@ -17,7 +17,7 @@ import InProgressPage from "./components/InProgressPage";
 import { ThemeProvider, useTheme } from "./theme-context";
 import "./fonts.css";
 import "./App.css";
-import JoinUs from "./components/JoinUs";
+import JoinUs from "./pages/JoinUs/JoinUs";
 import "./styles.css";
 
 const ScrollToTop = () => {

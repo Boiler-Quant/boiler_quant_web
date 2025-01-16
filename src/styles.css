@@ -22,7 +22,7 @@
     @apply text-xs sm:text-sm lg:text-lg;
   }
   .text-r-menu {
-    @apply text-xs sm:text-base lg:text-xl;
+    @apply text-xs sm:text-lg lg:text-3xl;
   }
 
   /* p */

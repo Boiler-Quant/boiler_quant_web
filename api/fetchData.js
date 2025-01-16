@@ -1,20 +1,12 @@
-// /api/fetchData.js
-// import fetch from "node-fetch";
-
 export default async function handler(req, res) {
-  // Extract query parameters from the request
   const { tableName } = req.query;
 
   // Securely access the Airtable API key from environment variables
   const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
   const BASE_ID = process.env.AIRTABLE_BASE_ID; // Airtable base ID
 
-  //   if (!AIRTABLE_API_KEY || !BASE_ID) {
-  //     return res.status(500).json({ error: "Missing environment variables" });
-  //   }
-
   // Airtable API URL
-  const AIRTABLE_URL = `https://api.airtable.com/v0/${BASE_ID}/Executive`;
+  const AIRTABLE_URL = `https://api.airtable.com/v0/${BASE_ID}/${tableName}`;
 
   const params = new URLSearchParams({
     "sort[0][field]": "Index",

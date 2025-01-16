@@ -130,7 +130,7 @@ const NavigationBar = () => {
 
       {/* Navigation Bar */}
       <div
-        className={`hidden sm:flex items-center space-r-x-3 text-r-menu font-frank ${theme.text_white}`}
+        className={`hidden pr-5 sm:flex items-center space-r-x-3 text-r-menu font-frank ${theme.text_white}`}
       >
         <Link
           to="/"

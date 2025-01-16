@@ -8,8 +8,8 @@ const WhatWeDo = () => {
         <hr className="my-r-3 border-gray-800" />
         {/* Section 1 */}
         <Section
-          title="Networking Opportunities"
-          content="We connect Purdue students with top quant firms and industry leaders through speaker series and company visits."
+          title="Project Work"
+          content="We provide hands-on opportunities to work on real-world quantitative finance projects, gaining valuable experience and practical skills."
           animation="slideInLeft"
         />
 
@@ -18,8 +18,8 @@ const WhatWeDo = () => {
 
         {/* Section 2 */}
         <Section
-          title="Interview Preparation"
-          content="Participate in workshops and weekly meetings to practice quant interviews, focusing on probabilities, math, and programming."
+          title="Networking Opportunities"
+          content="We connect Purdue students with top quant firms and industry leaders through speaker series and company visits."
           animation="slideInRight"
         />
 
@@ -28,9 +28,19 @@ const WhatWeDo = () => {
 
         {/* Section 3 */}
         <Section
+          title="Interview Preparation"
+          content="Participate in workshops and weekly meetings to practice quant interviews, focusing on probabilities, math, and programming."
+          animation="slideInLeft"
+        />
+
+        {/* Horizontal Line */}
+        <hr className="my-r-3 border-gray-800" />
+
+        {/* Section 4 */}
+        <Section
           title="Community Building"
           content="Join a community of like-minded students passionate about quant, and collaborate on impactful projects."
-          animation="slideInLeft"
+          animation="slideInRight"
         />
       </div>
       <style jsx>{`

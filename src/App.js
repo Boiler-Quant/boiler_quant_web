@@ -14,7 +14,7 @@ import BottomContact from "./components/BottomContact";
 import Projects from "./pages/Projects/Projects";
 import InProgressPage from "./components/InProgressPage";
 
-import { ThemeProvider, useTheme } from "./theme-context";
+import { ThemeProvider } from "./theme-context";
 import "./fonts.css";
 import "./App.css";
 import JoinUs from "./pages/JoinUs/JoinUs";

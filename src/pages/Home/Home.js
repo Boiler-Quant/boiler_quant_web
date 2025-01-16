@@ -1,5 +1,4 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../theme-context";
 import HeroSection from "./HeroSection";
@@ -27,7 +26,7 @@ const Main = () => {
         </p>
         <Link
           to="/join-us"
-          className={`inline-block ${theme.aged} ${theme.text_black} text-r-sm font-semibold py-r-1 px-r-2 rounded-lg hover:bg-blue-700 transition-colors`}
+          className={`inline-block ${theme.aged} ${theme.text_black} ${theme.hover_aged} text-r-sm font-semibold py-r-1 px-r-2 rounded-lg transition-colors`}
         >
           Learn More
         </Link>

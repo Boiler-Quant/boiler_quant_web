@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "../theme-context";
 import { Link, useLocation } from "react-router-dom";
+import { Box, Drawer } from "@mui/material";
 
 const NavigationBar = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const location = useLocation();
 
   const theme = useTheme();
@@ -41,8 +43,86 @@ const NavigationBar = () => {
           />
         </Link>
       </div>
+
+      {/* Hamburger Menu For Mobile */}
+      <button
+        className="sm:hidden text-white focus:outline-none"
+        onClick={() => setDrawerOpen(!drawerOpen)}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d={drawerOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+          />
+        </svg>
+      </button>
+
+      {/* Drawer for Mobile */}
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+      >
+        <div
+          className={`w-48 flex flex-col items-end ${theme.background} ${theme.text_white} h-full space-y-3 p-4`}
+        >
+          <Link
+            to="/"
+            className={`hover:underline ${isActive("/") ? "underline" : ""}`}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about-us"
+            className={`hover:underline ${
+              isActive("/about-us") ? "underline" : ""
+            }`}
+            onClick={() => setDrawerOpen(false)}
+          >
+            About Us
+          </Link>
+          <Link
+            to="/projects"
+            className={`hover:underline ${
+              isActive("/projects") ? "underline" : ""
+            }`}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/quizzes"
+            className={`hover:underline ${
+              isActive("/quizzes") ? "underline" : ""
+            }`}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Quizzes
+          </Link>
+          <Link
+            to="/join-us"
+            className={`hover:underline ${
+              isActive("/join-us") ? "underline" : ""
+            }`}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Join Us
+          </Link>
+        </div>
+      </Drawer>
+
+      {/* Navigation Bar */}
       <div
-        className={`flex items-center space-r-x-3 text-r-menu font-frank ${theme.text_white}`}
+        className={`hidden sm:flex items-center space-r-x-3 text-r-menu font-frank ${theme.text_white}`}
       >
         <Link
           to="/"

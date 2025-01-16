@@ -9,9 +9,9 @@ const BottomContact = () => {
       {/* Left Section: Logo and Name */}
       <div className="flex flex-col items-center justify-center w-1/2 space-r-y-1">
         <img
-          src="/submark_black_transparent.png"
+          src="/submark_black.svg"
           alt="Quant Club Logo"
-          className="w-r-8"
+          className="h-8 sm:h-14 lg:h-28"
         />
         <h2 className="text-r-base font-catchy">Boiler Quant</h2>
       </div>

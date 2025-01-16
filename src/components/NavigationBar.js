@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "../theme-context";
 import { Link, useLocation } from "react-router-dom";
-import { Box, Drawer } from "@mui/material";
+import { Drawer, IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 const NavigationBar = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -37,9 +38,9 @@ const NavigationBar = () => {
       <div className="flex">
         <Link to="/">
           <img
-            src="/submark_white_transparent.png"
+            src="/submark_white.svg"
             alt="Quant Club Logo"
-            className="h-r-6"
+            className="h-8 sm:h-14 lg:h-28"
           />
         </Link>
       </div>
@@ -74,6 +75,13 @@ const NavigationBar = () => {
         <div
           className={`w-48 flex flex-col items-end ${theme.background} ${theme.text_white} h-full space-y-3 p-4`}
         >
+          <IconButton
+            onClick={() => setDrawerOpen(false)}
+            className="self-end !text-white p-1" // Reduces padding and makes it white
+          >
+            <CloseIcon />
+          </IconButton>
+
           <Link
             to="/"
             className={`hover:underline ${isActive("/") ? "underline" : ""}`}

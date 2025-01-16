@@ -14,7 +14,7 @@ const About = ({ data }) => {
         {/* Image */}
         <img
           className="w-1/4"
-          src="submark_white_transparent.png"
+          src="submark_white.svg"
           alt="boiler quant logo"
         />
         {/* Caption */}

@@ -6,9 +6,15 @@ const HeroSection = () => {
     <div
       className="relative w-full h-screen bg-cover bg-center"
       style={{
-        backgroundImage: `url('/purdue_image.jpg')`, // Main hero image
+        backgroundImage: `url('/purdue_image.jpg')`, // Default image for larger screens
       }}
     >
+      <div
+        className="sm:hidden absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('/purdue_image_mobile.jpg')`, // Image for smaller screens
+        }}
+      ></div>{" "}
       <div
         className={`absolute bottom-r-4 px-r-5 ${theme.text_white} font-frank`}
       >
@@ -19,7 +25,6 @@ const HeroSection = () => {
           Join us to explore the future of quant at Purdue.
         </p>
       </div>
-
       <div className="absolute bottom-r-1 left-1/2 transform -translate-x-1/2">
         <div className="animate-bounce mt-2">
           <svg

@@ -34,10 +34,11 @@ const ProjectCard = ({ project }) => {
           <h2 className="text-xl py-2 lg:text-4xl lg:py-4 font-frank font-bold">
             {project["fields"]["Title"]}
             <a
-              href={project["fields"]["GitHub"]}
+              href="https://www.github.com/Boiler-Quant"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2"
+              tabIndex="0"
             >
               <GitHubIcon sx={{ fontSize: "1.5rem", color: "white" }} />
             </a>

@@ -22,13 +22,13 @@ const Main = () => {
       <section className="py-r-10 px-r-5 bg-gray-100 text-center">
         <h2 className="text-r-lg font-bold mb-r-2 font-catchy">Join Us</h2>
         <p className="text-r-sm-3xl mb-r-3">
-          The application for 2025 Spring will be open on January 19th, 2025!
+          The application for Spring 2025 is open!
         </p>
         <Link
           to="/join-us"
-          className={`inline-block ${theme.aged} ${theme.text_black} ${theme.hover_aged} text-r-sm font-semibold py-r-1 px-r-2 rounded-lg transition-colors`}
+          className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-r-sm font-semibold py-r-1 px-r-2 rounded-lg transition-colors`}
         >
-          Learn More
+          Join Us Now
         </Link>
       </section>
     </div>

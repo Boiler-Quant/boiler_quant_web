@@ -13,12 +13,12 @@ const events = [
     time: "@ 11:59 PM",
   },
   {
-    date: "1/22",
+    date: "1/21",
     title: "FIRST CALLOUT",
     time: "@ 7:30PM RAWL 1062",
   },
   {
-    date: "1/24",
+    date: "1/22",
     title: "SECOND CALLOUT",
     time: "@ 7:30PM RAWL 1062",
   },

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useTheme } from "../../theme-context";
-import ExecutiveBoard from "./ExecutiveBoard";
+import LargeExecutiveBoard from "./LargeExecutiveBoard";
+import SmallExecutiveBoard from "./SmallExecutiveBoard";
 
 const About = ({ data }) => {
   const theme = useTheme();
@@ -48,31 +49,12 @@ const About = ({ data }) => {
         </section>
       </div>
 
-      {/* <div className={`py-14 px-10 bg-gray-200 ${theme.text_black}`}>
-        <section className="w-full">
-          <h2 className="text-5xl font-bold font-frank pb-10 pt-3">
-            What We Do
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 justify-center">
-            <Section
-              title="Networking Opportunities"
-              content="We connect Purdue students with top quant firms and industry leaders through speaker series and company visits."
-            />
-
-            <Section
-              title="Interview Preparation"
-              content="Participate in workshops and weekly meetings to practice quant interviews, focusing on probabilities, math, and programming."
-            />
-
-            <Section
-              title="Community Building"
-              content="Join a community of like-minded students passionate about quant, and collaborate on impactful projects."
-            />
-          </div>
-        </section>
-      </div> */}
-
-      <ExecutiveBoard data={data} />
+      <div className="block md:hidden">
+        <SmallExecutiveBoard data={data} />
+      </div>
+      <div className="hidden md:block">
+        <LargeExecutiveBoard data={data} />
+      </div>
     </div>
   );
 };

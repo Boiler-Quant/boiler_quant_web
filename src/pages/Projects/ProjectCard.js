@@ -34,7 +34,7 @@ const ProjectCard = ({ project }) => {
           <h2 className="text-xl py-2 lg:text-4xl lg:py-4 font-frank font-bold">
             {project["fields"]["Title"]}
             <a
-              href="https://www.github.com/Boiler-Quant"
+              href={project["fields"]["Link"]}
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2"

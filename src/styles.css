@@ -16,7 +16,10 @@
     @apply text-sm sm:text-lg lg:text-xl;
   }
   .text-r-sm-3xl {
-    @apply text-sm sm:text-lg lg:text-3xl;
+    @apply text-sm sm:text-xl lg:text-3xl;
+  }
+  .text-r-xs-2xl {
+    @apply text-xs sm:text-lg lg:text-2xl;
   }
   .text-r-xs {
     @apply text-xs sm:text-sm lg:text-lg;

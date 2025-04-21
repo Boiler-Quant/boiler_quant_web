@@ -18,9 +18,26 @@ const Main = () => {
       {/* Club Highlights Section */}
       <HighlightGroup />
 
+      {/* Sponsors */}
+      <div className={`-mx-6 lg:-mx-10 bg-gray-100 text-black py-12`}>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl lg:text-3xl font-bold font-frank text-center mb-8">
+            Sponsored by Old Mission
+          </h2>
+          {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center justify-items-center"> */}
+          <img
+            src="/old_mission_logo.png"
+            alt="Old Mission"
+            className="w-40 sm:w-52 md:w-64 lg:w-72 xl:w-80 h-auto mx-auto object-contain"
+          />
+          {/* Add more logos as needed */}
+          {/* </div> */}
+        </div>
+      </div>
+
       {/* Join Us Section */}
-      <div className="bg-gray-100 flex flex-row justify-center">
-        <section className="py-r-10 px-r-5 bg-gray-100 text-center w-full max-w-7xl">
+      <div className="bg-white flex flex-row justify-center">
+        <section className="py-r-10 px-r-5 bg-white text-center w-full max-w-7xl">
           <h2 className="text-r-lg font-bold mb-r-2 font-catchy">Join Us</h2>
           <p className="text-r-sm-3xl mb-r-3 font-semibold">
             Applications for Spring 2025 Are Now Closed.

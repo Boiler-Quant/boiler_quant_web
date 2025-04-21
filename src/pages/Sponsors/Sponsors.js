@@ -37,7 +37,9 @@ const Sponsors = () => {
             Why Sponsor Us
           </h2>
           <ul className="list-disc list-inside text-md lg:text-lg font-serif space-y-2">
-            <li>Access to top talent in quantitative finance and CS</li>
+            <li>
+              Access to top talent in quantitative finance and computer science
+            </li>
             <li>Brand exposure on campus and social platforms</li>
             <li>Exclusive recruiting and networking opportunities</li>
           </ul>

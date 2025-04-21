@@ -40,7 +40,7 @@ const NavigationBar = () => {
           <img
             src="/submark_white.svg"
             alt="Quant Club Logo"
-            className="h-8 sm:h-14 lg:h-28"
+            className="h-8 sm:h-14 lg:h-20"
           />
         </Link>
       </div>
@@ -108,13 +108,13 @@ const NavigationBar = () => {
             Projects
           </Link>
           <Link
-            to="/quizzes"
+            to="/sponsors"
             className={`hover:underline ${
-              isActive("/quizzes") ? "underline" : ""
+              isActive("/sponsors") ? "underline" : ""
             }`}
             onClick={() => setDrawerOpen(false)}
           >
-            Quizzes
+            Sponsors
           </Link>
           <Link
             to="/join-us"
@@ -156,12 +156,12 @@ const NavigationBar = () => {
           Projects
         </Link>
         <Link
-          to="/quizzes"
+          to="/sponsors"
           className={`hover:underline ${
-            isActive("/quizzes") ? "underline" : ""
+            isActive("/sponsors") ? "underline" : ""
           }`}
         >
-          Quizzes
+          Sponsors
         </Link>
         <Link
           to="/join-us"

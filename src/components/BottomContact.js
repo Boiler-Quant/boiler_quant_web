@@ -29,7 +29,7 @@ const BottomContact = () => {
               alt="Instagram"
               className="h-r-3 w-r-3"
             />
-            <p className="text-r-xs ml-r-0-5">Follow Us on Instagram</p>
+            <p className="text-r-xs ml-r-0-5">Follow us on Instagram</p>
           </div>
         </a>
         <a
@@ -43,7 +43,7 @@ const BottomContact = () => {
               alt="LinkedIn"
               className="h-r-3 w-r-3"
             />
-            <p className="text-r-xs ml-r-0-5">Connect with Us on LinkedIn</p>
+            <p className="text-r-xs ml-r-0-5">Connect with us on LinkedIn</p>
           </div>
         </a>
 

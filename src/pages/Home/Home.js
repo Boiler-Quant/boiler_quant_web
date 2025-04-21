@@ -25,7 +25,7 @@ const Main = () => {
           <p className="text-r-sm-3xl mb-r-3 font-semibold">
             Applications for Spring 2025 Are Now Closed.
           </p>
-          <h2 className="text-r-sm-3xl mb-1 lg:mb-3 font-semibold">
+          {/* <h2 className="text-r-sm-3xl mb-1 lg:mb-3 font-semibold">
             What's Next?
           </h2>
           <p className="text-r-xs-2xl mb-2 lg:mb-4">
@@ -38,7 +38,7 @@ const Main = () => {
             className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-r-sm font-semibold py-r-1 px-r-2 rounded-lg transition-colors mb-r-3`}
           >
             Join Us Page
-          </Link>
+          </Link> */}
           <p className="text-r-sm-3xl lg:mb-3 font-semibold">
             Missed the Deadline?
           </p>

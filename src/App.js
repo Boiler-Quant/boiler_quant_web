@@ -13,6 +13,7 @@ import About from "./pages/AboutUs/About";
 import BottomContact from "./components/BottomContact";
 import Projects from "./pages/Projects/Projects";
 import InProgressPage from "./components/InProgressPage";
+import Sponsors from "./pages/Sponsors/Sponsors";
 
 import { ThemeProvider } from "./theme-context";
 import "./fonts.css";
@@ -85,7 +86,7 @@ const App = () => {
                 path="/projects"
                 element={<Projects projects={projectData} />}
               />
-              <Route path="/quizzes" element={<InProgressPage />} />
+              <Route path="/sponsors" element={<Sponsors />} />
               <Route path="/join-us" element={<JoinUs />} />
             </Routes>
           </div>

@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <Box sx={{ minWidth: 275 }}>
+    <Box sx={{ minWidth: 275 }} className="w-full">
       <Card
         variant="outlined"
         onClick={handleExpandClick}
@@ -31,17 +31,19 @@ const ProjectCard = ({ project }) => {
         className="!text-white"
       >
         <CardContent>
-          <h2 className="text-xl py-2 lg:text-4xl lg:py-4 font-frank font-bold">
+          <h2 className="text-r-base-4xl py-2 lg:py-4 font-frank font-bold">
             {project["fields"]["Title"]}
-            <a
-              href={project["fields"]["Link"]}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-2"
-              tabIndex="0"
-            >
-              <GitHubIcon sx={{ fontSize: "1.5rem", color: "white" }} />
-            </a>
+            {project["fields"]["Link"] && (
+              <a
+                href={project["fields"]["Link"]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2"
+                tabIndex="0"
+              >
+                <GitHubIcon sx={{ fontSize: "1.5rem", color: "white" }} />
+              </a>
+            )}
           </h2>
           <div className="flex flex-wrap gap-2">
             {project["fields"]["Tags"].map((tag, index) => (
@@ -53,7 +55,7 @@ const ProjectCard = ({ project }) => {
               </span>
             ))}
           </div>
-          <p className="text-sm lg:text-2xl font-serif py-2">
+          <p className="text-r-sm font-serif py-2">
             {project["fields"]["Summary"]}
           </p>
           <p className="text-xs py-1 lg:text-lg sm:py-2 font-serif">

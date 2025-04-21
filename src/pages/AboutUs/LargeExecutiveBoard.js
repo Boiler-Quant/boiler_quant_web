@@ -40,14 +40,14 @@ const LargeExecutiveBoard = ({ data }) => {
       </h2>
       <div className="flex flex-row justify-center gap-x-8 xl:gap-x-40 py-3">
         {data.slice(0, 2).map((exec, index) => (
-          <div key={index} className="flex flex-col w-64 xl:w-96">
+          <div key={index} className="flex flex-col w-64 xl:w-80">
             <ExecutiveCard exec={exec} index={index} />
           </div>
         ))}
       </div>
       <div className="flex flex-row justify-center gap-x-8 xl:gap-x-24 py-3">
         {data.slice(2, 5).map((exec, index) => (
-          <div key={index} className="flex flex-col w-64 xl:w-96">
+          <div key={index} className="flex flex-col w-64 xl:w-80">
             <ExecutiveCard exec={exec} index={index} />
           </div>
         ))}

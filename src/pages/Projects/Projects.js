@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { useTheme } from "../../theme-context";
 import ProjectCard from "./ProjectCard";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Projects = ({ projects }) => {
+  const [showFall24, setShowFall24] = useState(false);
+
   const theme = useTheme();
 
   return (
@@ -30,13 +33,39 @@ const Projects = ({ projects }) => {
         </a>
       </div>
 
-      <h2 className="text-2xl py-4 lg:text-4xl font-bold font-catchy">
-        Fall `24 Projects
-      </h2>
-      <div className="space-y-4 sm:space-y-6">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-2xl py-4 lg:text-3xl font-bold font-catchy">
+          Spring `25 Projects
+        </h2>
+
+        <div className="space-y-4 sm:space-y-6">
+          {projects
+            .filter((project) => project.fields.Semester === "Spring 2025")
+            .map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+        </div>
+      </div>
+
+      <hr className="my-12 border-t border-white/30" />
+
+      <div className="max-w-5xl mx-auto">
+        <button
+          className="w-full text-left text-2xl py-4 lg:text-3xl font-bold font-catchy"
+          onClick={() => setShowFall24((prev) => !prev)}
+        >
+          {showFall24 ? "▼ Fall `24 Projects" : "▶ Fall `24 Projects"}
+        </button>
+
+        {showFall24 && (
+          <div className="space-y-4 sm:space-y-6">
+            {projects
+              .filter((project) => project.fields.Semester === "Fall 2024")
+              .map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+          </div>
+        )}
       </div>
     </div>
   );

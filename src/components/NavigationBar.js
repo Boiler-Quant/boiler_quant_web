@@ -32,7 +32,7 @@ const NavigationBar = () => {
 
   return (
     <div
-      className={`flex fixed top-0 left-0 w-screen p-r-3 z-50 justify-between transition-all duration-300 ${navBackground}`}
+      className={`nav-container ${navBackground}`}
       style={{ boxSizing: "border-box" }}
     >
       <div className="flex">
@@ -40,14 +40,14 @@ const NavigationBar = () => {
           <img
             src="/submark_white.svg"
             alt="Quant Club Logo"
-            className="h-8 sm:h-14 lg:h-20"
+            className="nav-logo"
           />
         </Link>
       </div>
 
       {/* Hamburger Menu For Mobile */}
       <button
-        className="sm:hidden text-white focus:outline-none"
+        className="nav-mobile-button"
         onClick={() => setDrawerOpen(!drawerOpen)}
       >
         <svg
@@ -72,55 +72,45 @@ const NavigationBar = () => {
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
       >
-        <div
-          className={`w-48 flex flex-col items-end ${theme.background} ${theme.text_white} h-full space-y-3 p-4`}
-        >
+        <div className={`nav-drawer ${theme.background} ${theme.text_white}`}>
           <IconButton
             onClick={() => setDrawerOpen(false)}
-            className="self-end !text-white p-1" // Reduces padding and makes it white
+            className="self-end !text-white p-1"
           >
             <CloseIcon />
           </IconButton>
 
           <Link
             to="/"
-            className={`hover:underline ${isActive("/") ? "underline" : ""}`}
+            className={`nav-link ${isActive("/") ? "underline" : ""}`}
             onClick={() => setDrawerOpen(false)}
           >
             Home
           </Link>
           <Link
             to="/about-us"
-            className={`hover:underline ${
-              isActive("/about-us") ? "underline" : ""
-            }`}
+            className={`nav-link ${isActive("/about-us") ? "underline" : ""}`}
             onClick={() => setDrawerOpen(false)}
           >
             About Us
           </Link>
           <Link
             to="/projects"
-            className={`hover:underline ${
-              isActive("/projects") ? "underline" : ""
-            }`}
+            className={`nav-link ${isActive("/projects") ? "underline" : ""}`}
             onClick={() => setDrawerOpen(false)}
           >
             Projects
           </Link>
           <Link
             to="/sponsors"
-            className={`hover:underline ${
-              isActive("/sponsors") ? "underline" : ""
-            }`}
+            className={`nav-link ${isActive("/sponsors") ? "underline" : ""}`}
             onClick={() => setDrawerOpen(false)}
           >
             Sponsors
           </Link>
           <Link
             to="/join-us"
-            className={`hover:underline ${
-              isActive("/join-us") ? "underline" : ""
-            }`}
+            className={`nav-link ${isActive("/join-us") ? "underline" : ""}`}
             onClick={() => setDrawerOpen(false)}
           >
             Join Us
@@ -129,45 +119,32 @@ const NavigationBar = () => {
       </Drawer>
 
       {/* Navigation Bar */}
-      <div
-        className={`hidden pr-5 sm:flex items-center space-r-x-3 text-r-menu font-frank ${theme.text_white}`}
-      >
-        <Link
-          to="/"
-          className={`hover:underline ${isActive("/") ? "underline" : ""}`}
-        >
+      <div className={`nav-links ${theme.text_white}`}>
+        <Link to="/" className={`nav-link ${isActive("/") ? "underline" : ""}`}>
           Home
         </Link>
 
         <Link
           to="/about-us"
-          className={`hover:underline ${
-            isActive("/about-us") ? "underline" : ""
-          }`}
+          className={`nav-link ${isActive("/about-us") ? "underline" : ""}`}
         >
           About Us
         </Link>
         <Link
           to="/projects"
-          className={`hover:underline ${
-            isActive("/projects") ? "underline" : ""
-          }`}
+          className={`nav-link ${isActive("/projects") ? "underline" : ""}`}
         >
           Projects
         </Link>
         <Link
           to="/sponsors"
-          className={`hover:underline ${
-            isActive("/sponsors") ? "underline" : ""
-          }`}
+          className={`nav-link ${isActive("/sponsors") ? "underline" : ""}`}
         >
           Sponsors
         </Link>
         <Link
           to="/join-us"
-          className={`hover:underline ${
-            isActive("/join-us") ? "underline" : ""
-          }`}
+          className={`nav-link ${isActive("/join-us") ? "underline" : ""}`}
         >
           Join Us
         </Link>

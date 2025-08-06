@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
         className="!text-white"
       >
         <CardContent>
-          <h2 className="text-r-base-4xl py-2 lg:py-4 font-frank font-bold">
+          <h2 className="text-heading-sm py-2 lg:py-4 font-catchy font-bold">
             {project["fields"]["Title"]}
             {project["fields"]["Link"] && (
               <a
@@ -49,16 +49,16 @@ const ProjectCard = ({ project }) => {
             {project["fields"]["Tags"].map((tag, index) => (
               <span
                 key={index}
-                className={`text-xs lg:text-sm px-3 py-1 rounded-full ${theme.dust} ${theme.text_black}`}
+                className={`text-body-xs lg:text-body-sm px-3 py-1 rounded-full ${theme.dust} ${theme.text_black} font-catchy`}
               >
                 {tag}
               </span>
             ))}
           </div>
-          <p className="text-r-sm font-serif py-2">
+          <p className="text-body-md font-catchy py-2">
             {project["fields"]["Summary"]}
           </p>
-          <p className="text-xs py-1 lg:text-lg sm:py-2 font-serif">
+          <p className="text-body-sm py-1 lg:text-body-md font-catchy">
             Contributors: {project["fields"]["Contributors"]}
           </p>
           <IconButton

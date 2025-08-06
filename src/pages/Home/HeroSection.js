@@ -4,7 +4,7 @@ const HeroSection = () => {
   const theme = useTheme();
   return (
     <div
-      className="relative w-full h-screen bg-cover bg-center"
+      className="hero-container"
       style={{
         backgroundImage: `url('/purdue_image.jpg')`, // Default image for larger screens
       }}
@@ -14,18 +14,14 @@ const HeroSection = () => {
         style={{
           backgroundImage: `url('/purdue_image_mobile.jpg')`, // Image for smaller screens
         }}
-      ></div>{" "}
-      <div
-        className={`absolute bottom-r-4 px-r-5 ${theme.text_white} font-frank`}
-      >
-        <h1 className="text-r-lg lg:pb-3 font-bold">
-          PURDUE'S LEADING QUANT FINANCE COMMUNITY
-        </h1>
-        <p className="text-r-sm-3xl">
+      ></div>
+      <div className={`hero-content ${theme.text_white}`}>
+        <h1 className="hero-title">PURDUE'S LEADING QUANT FINANCE COMMUNITY</h1>
+        <p className="hero-subtitle">
           Join us to explore the future of quant at Purdue.
         </p>
       </div>
-      <div className="absolute bottom-r-1 left-1/2 transform -translate-x-1/2">
+      <div className="hero-scroll-indicator">
         <div className="animate-bounce mt-2">
           <svg
             className="w-6 h-6"

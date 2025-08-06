@@ -5,31 +5,31 @@ const BottomContact = () => {
   const theme = useTheme();
 
   return (
-    <div className={`py-r-5 px-r-2 ${theme.dust} flex text-black`}>
+    <div className={`footer-container ${theme.dust} text-black`}>
       {/* Left Section: Logo and Name */}
-      <div className="flex flex-col items-center justify-center w-1/2 space-r-y-1">
+      <div className="footer-logo-section">
         <img
           src="/submark_black.svg"
           alt="Quant Club Logo"
-          className="h-8 sm:h-14 lg:h-28"
+          className="footer-logo"
         />
-        <h2 className="text-r-base font-catchy">Boiler Quant</h2>
+        <h2 className="text-body-md font-catchy">Boiler Quant</h2>
       </div>
 
       {/* Right Section: Contact Links */}
-      <div className="flex flex-col items-center justify-center w-1/2 space-r-y-1 text-black">
+      <div className="footer-links">
         <a
           href="https://www.instagram.com/boilerquant/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="flex items-center hover:opacity-70">
+          <div className="footer-link">
             <img
               src="/instagram-logo.png"
               alt="Instagram"
-              className="h-r-3 w-r-3"
+              className="footer-link-icon"
             />
-            <p className="text-r-xs ml-r-0-5">Follow us on Instagram</p>
+            <p className="footer-link-text">Follow us on Instagram</p>
           </div>
         </a>
         <a
@@ -37,13 +37,13 @@ const BottomContact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="flex items-center hover:opacity-70">
+          <div className="footer-link">
             <img
               src="/linkedin-logo.png"
               alt="LinkedIn"
-              className="h-r-3 w-r-3"
+              className="footer-link-icon"
             />
-            <p className="text-r-xs ml-r-0-5">Connect with us on LinkedIn</p>
+            <p className="footer-link-text">Connect with us on LinkedIn</p>
           </div>
         </a>
 
@@ -52,9 +52,13 @@ const BottomContact = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="flex items-center hover:opacity-70">
-            <img src="/mail-logo.png" alt="Email" className="h-r-3 w-r-3" />
-            <p className="text-r-xs ml-r-0-5">boilerquant@gmail.com</p>
+          <div className="footer-link">
+            <img
+              src="/mail-logo.png"
+              alt="Email"
+              className="footer-link-icon"
+            />
+            <p className="footer-link-text">boilerquant@gmail.com</p>
           </div>
         </a>
       </div>

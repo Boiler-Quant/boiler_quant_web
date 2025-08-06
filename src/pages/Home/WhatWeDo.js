@@ -2,10 +2,10 @@ import { useInView } from "react-intersection-observer";
 
 const WhatWeDo = () => {
   return (
-    <section className="py-r-10 px-r-5 bg-gray-100 flex flex-col items-center w-full">
-      <h2 className="text-r-lg font-bold mb-r-3 font-frank">What We Do</h2>
-      <div className="container space-r-y-4">
-        <hr className="my-r-3 border-gray-800" />
+    <section className="section-container bg-gray-100">
+      <h2 className="section-title">What We Do</h2>
+      <div className="section-content">
+        <hr className="section-margin-sm border-gray-800" />
         {/* Section 1 */}
         <Section
           title="Project Work"
@@ -14,7 +14,7 @@ const WhatWeDo = () => {
         />
 
         {/* Horizontal Line */}
-        <hr className="my-r-3 border-gray-800" />
+        <hr className="section-margin-sm border-gray-800" />
 
         {/* Section 2 */}
         <Section
@@ -24,7 +24,7 @@ const WhatWeDo = () => {
         />
 
         {/* Horizontal Line */}
-        <hr className="my-r-3 border-gray-800" />
+        <hr className="section-margin-sm border-gray-800" />
 
         {/* Section 3 */}
         <Section
@@ -34,7 +34,7 @@ const WhatWeDo = () => {
         />
 
         {/* Horizontal Line */}
-        <hr className="my-r-3 border-gray-800" />
+        <hr className="section-margin-sm border-gray-800" />
 
         {/* Section 4 */}
         <Section
@@ -111,9 +111,9 @@ const Section = ({ title, content, animation }) => {
         ...animationStyle,
       }}
     >
-      <div className="space-r-y-4">
-        <h3 className="text-r-base-4xl font-semibold font-frank">{title}</h3>
-        <p className="text-r-sm-3xl font-serif">{content}</p>
+      <div className="space-y-responsive-sm">
+        <h3 className="card-title">{title}</h3>
+        <p className="card-text">{content}</p>
       </div>
     </div>
   );

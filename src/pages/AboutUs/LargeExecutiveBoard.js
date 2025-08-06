@@ -34,18 +34,16 @@ const LargeExecutiveBoard = ({ data }) => {
   const theme = useTheme();
 
   return (
-    <div className={`py-r-5 px-r-2 bg-gray-200 ${theme.text_black}`}>
-      <h2 className="text-r-lg font-bold font-catchy mb-r-2 text-center">
-        2025 Executive Board
-      </h2>
-      <div className="flex flex-row justify-center gap-x-8 xl:gap-x-40 py-3">
+    <div className={`section-container-sm bg-gray-200 ${theme.text_black}`}>
+      <h2 className="section-title font-catchy">2025 Executive Board</h2>
+      <div className="flex flex-row justify-center gap-responsive py-3">
         {data.slice(0, 2).map((exec, index) => (
           <div key={index} className="flex flex-col w-64 xl:w-80">
             <ExecutiveCard exec={exec} index={index} />
           </div>
         ))}
       </div>
-      <div className="flex flex-row justify-center gap-x-8 xl:gap-x-24 py-3">
+      <div className="flex flex-row justify-center gap-responsive py-3">
         {data.slice(2, 5).map((exec, index) => (
           <div key={index} className="flex flex-col w-64 xl:w-80">
             <ExecutiveCard exec={exec} index={index} />

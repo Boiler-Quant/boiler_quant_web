@@ -34,11 +34,9 @@ const SmallExecutiveBoard = ({ data }) => {
   const theme = useTheme();
 
   return (
-    <div className={`py-r-5 px-r-2 bg-gray-200 ${theme.text_black}`}>
-      <h2 className="text-r-lg font-bold font-catchy mb-r-2 text-center">
-        2025 Executive Board
-      </h2>
-      <div className="grid grid-cols-2 gap-3 xl:gap-10 py-3 px-2 justify-items-center">
+    <div className={`section-container-sm bg-gray-200 ${theme.text_black}`}>
+      <h2 className="section-title font-catchy">2025 Executive Board</h2>
+      <div className="grid grid-cols-2 gap-responsive py-3 px-2 justify-items-center">
         {data.map((exec, index) => (
           <div key={index} className="flex flex-col w-full max-w-72">
             <ExecutiveCard exec={exec} index={index} />

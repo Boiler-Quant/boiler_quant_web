@@ -58,11 +58,11 @@ export default function AlternateTimeline() {
                   index % 2 === 1 ? "ml-auto text-right" : ""
                 }`}
               >
-                <h1 className="text-base sm:text-xl lg:text-4xl lg:pb-2">
+                <h1 className="text-heading-sm lg:text-heading-lg lg:pb-2">
                   {event.date}
                 </h1>
-                <p className="text-xs sm:text-base lg:text-xl">{event.title}</p>
-                <p className="text-xs sm:text-base lg:text-xl">{event.time}</p>
+                <p className="text-body-sm lg:text-body-lg">{event.title}</p>
+                <p className="text-body-sm lg:text-body-lg">{event.time}</p>
               </div>
 
               {index % 2 === 1 && (

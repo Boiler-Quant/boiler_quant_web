@@ -8,11 +8,16 @@ const Sponsors = () => {
       <div className={`${theme.dust} text-black py-12`}>
         <div className="max-w-5xl mx-auto px-6 lg:px-10 mt-6 lg:mt-24 ">
           <h2 className="text-2xl lg:text-3xl font-bold font-frank text-center mb-8">
-            Sponsored by Old Mission
+            Sponsors
           </h2>
           <img
             src="/old_mission_logo.png"
             alt="Old Mission"
+            className="w-40 sm:w-52 md:w-64 lg:w-72 xl:w-80 h-auto mx-auto object-contain"
+          />
+          <img
+            src="/peak6_logo.png"
+            alt="Peak 6"
             className="w-40 sm:w-52 md:w-64 lg:w-72 xl:w-80 h-auto mx-auto object-contain"
           />
         </div>
@@ -38,7 +43,8 @@ const Sponsors = () => {
           </h2>
           <ul className="list-disc list-inside text-md lg:text-lg font-serif space-y-2">
             <li>
-              Access to top talent in quantitative finance and computer science
+              Access to top talent in computer science, statistics, math, and
+              finance
             </li>
             <li>Brand exposure on campus and social platforms</li>
             <li>Exclusive recruiting and networking opportunities</li>

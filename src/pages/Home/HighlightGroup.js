@@ -6,30 +6,42 @@ const HighlightGroup = () => {
 
   return (
     <section className="section-container bg-white">
-      <h2 className="section-title">Fall `24 Highlights</h2>
+      <h2 className="section-title">Spring 2025 Highlights</h2>
       <div className="section-content">
         <Highlight
           theme={theme}
-          image="/project_presentation_day.jpg"
-          title="Project Presentation Day"
-          content="This past semester we had 6 total projects, see more information below."
-          button
+          image="/2025_spring/chicago_trek.jpeg"
+          title="Chicago Office Tours"
+          content="We visited Old Mission, Akuna Capital, PEAK6, and Gelber Group LLC during our Spring 2025 Trek, exploring options theory, trading simulations, and each firm’s unique culture."
         />
         {/* Highlight 2 */}
         <Highlight
           theme={theme}
-          image="/chicago_office_tours.jpg"
-          title="Chicago Office Tours"
-          content="On our Chicago Trek, we were fortunate to visit Old Mission, WH Trading, Belvedere, and Akuna Capital."
+          image="/2025_spring/poker_tournament.jpeg"
+          title="Poker Tournament"
+          content="We hosted a weekend poker tournament and other games like trading simulations and the Estimathon to sharpen strategic thinking and decision-making."
           reverse
         />
         {/* Highlight 3 */}
         <Highlight
           theme={theme}
-          image="/competitive_games.jpg"
-          title="Competitive Games"
-          content="Throughout the semester, we played various games to improve probabilistic thinking and decision making under uncertainty."
+          image="/2025_spring/jeremy_wien.jpeg"
+          title="Guest Speaker Session"
+          content="Welcomed Jeremy Wien, poker player and quant trader, for insights on career, strategy, and high-stakes decision-making."
         />
+      </div>
+
+      {/* Spring 2025 Projects Call-to-Action */}
+      <div className="text-center mt-12">
+        <p className="text-body-md font-serif text-gray-600 mb-6">
+          Want to see more of what we accomplished this semester?
+        </p>
+        <Link
+          to="/projects"
+          className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-md font-semibold py-3 px-6 rounded-lg transition-colors`}
+        >
+          Check Out Our Spring 2025 Projects!
+        </Link>
       </div>
     </section>
   );

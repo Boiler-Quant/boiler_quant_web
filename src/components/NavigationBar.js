@@ -7,6 +7,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const NavigationBar = () => {
   const [scrollY, setScrollY] = useState(0);
   const [drawerOpen, setDrawerOpen] = useState(false);
+
   const location = useLocation();
 
   const theme = useTheme();
@@ -93,6 +94,15 @@ const NavigationBar = () => {
             onClick={() => setDrawerOpen(false)}
           >
             About Us
+          </Link>
+          <Link
+            to="/past-semesters"
+            className={`nav-link ${
+              isActive("/past-semesters") ? "underline" : ""
+            }`}
+            onClick={() => setDrawerOpen(false)}
+          >
+            Past Semesters
           </Link>
           <Link
             to="/projects"

@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import Home from "./pages/Home/Home";
-import About from "./pages/AboutUs/About";
+import TabbedAbout from "./pages/AboutUs/TabbedAbout";
 import BottomContact from "./components/BottomContact";
 import Projects from "./pages/Projects/Projects";
 import InProgressPage from "./components/InProgressPage";
@@ -80,7 +80,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route
                 path="/about-us"
-                element={<About data={executiveData} />}
+                element={<TabbedAbout data={executiveData} />}
               />
               <Route
                 path="/projects"

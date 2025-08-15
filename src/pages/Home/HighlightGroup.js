@@ -6,8 +6,10 @@ const HighlightGroup = () => {
 
   return (
     <section className="section-container bg-white">
-      <h2 className="section-title">Spring 2025 Highlights</h2>
-      <div className="section-content">
+      <h2 className="text-heading-sm xl:text-heading-md font-bold font-frank mb-section-sm text-center">
+        Spring 2025 Highlights
+      </h2>
+      <div className="section-content px-8 xl:px-12">
         <Highlight
           theme={theme}
           image="/2025_spring/chicago_trek.jpeg"
@@ -32,13 +34,13 @@ const HighlightGroup = () => {
       </div>
 
       {/* Spring 2025 Projects Call-to-Action */}
-      <div className="text-center mt-12">
-        <p className="text-body-md font-serif text-gray-600 mb-6">
+      <div className="text-center mt-8 xl:mt-12">
+        <p className="text-body-sm xl:text-body-md font-serif text-gray-600 mb-4 xl:mb-6">
           Want to see more of what we accomplished this semester?
         </p>
         <Link
           to="/projects"
-          className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-md font-semibold py-3 px-6 rounded-lg transition-colors`}
+          className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm xl:text-body-md font-semibold py-2 xl:py-3 px-4 xl:px-6 rounded-lg transition-colors`}
         >
           Check Out Our Spring 2025 Projects!
         </Link>
@@ -64,7 +66,7 @@ const Highlight = ({ theme, image, title, content, reverse, button }) => {
           <div className="flex justify-center">
             <Link
               to="/projects"
-              className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm font-semibold py-2 px-4 rounded-lg transition-colors`}
+              className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-xs xl:text-body-sm font-semibold py-1.5 xl:py-2 px-3 xl:px-4 rounded-lg transition-colors`}
             >
               Learn More
             </Link>

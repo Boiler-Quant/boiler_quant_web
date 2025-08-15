@@ -95,15 +95,7 @@ const NavigationBar = () => {
           >
             About Us
           </Link>
-          <Link
-            to="/past-semesters"
-            className={`nav-link ${
-              isActive("/past-semesters") ? "underline" : ""
-            }`}
-            onClick={() => setDrawerOpen(false)}
-          >
-            Past Semesters
-          </Link>
+
           <Link
             to="/projects"
             className={`nav-link ${isActive("/projects") ? "underline" : ""}`}

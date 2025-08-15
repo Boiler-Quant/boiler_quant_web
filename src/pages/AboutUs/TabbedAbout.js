@@ -17,23 +17,23 @@ const TabbedAbout = ({ data }) => {
       >
         {/* Image */}
         <img
-          className="w-1/4"
+          className="w-1/5 xl:w-1/6"
           src="submark_white.svg"
           alt="boiler quant logo"
         />
         {/* Caption */}
-        <p className="mt-4 text-body-md font-semibold font-frank">
+        <p className="mt-4 text-body-sm xl:text-body-md font-semibold font-frank">
           PURDUE'S LEADING QUANT FINANCE COMMUNITY
         </p>
       </div>
 
       {/* Tab Navigation */}
       <div className="w-full bg-gray-100 border-b border-gray-200">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl xl:max-w-4xl mx-auto px-8 xl:px-12">
           <div className="flex">
             <button
               onClick={() => setActiveTab("overview")}
-              className={`flex-1 py-4 px-6 text-center font-frank font-semibold transition-all duration-200 ${
+              className={`flex-1 py-3 xl:py-4 px-4 xl:px-6 text-center font-frank font-semibold text-sm xl:text-base transition-all duration-200 ${
                 activeTab === "overview"
                   ? `${theme.background} ${theme.text_white}`
                   : "text-gray-600 hover:text-gray-800 hover:bg-gray-200"
@@ -43,7 +43,7 @@ const TabbedAbout = ({ data }) => {
             </button>
             <button
               onClick={() => setActiveTab("past-semesters")}
-              className={`flex-1 py-4 px-6 text-center font-frank font-semibold transition-all duration-200 ${
+              className={`flex-1 py-3 xl:py-4 px-4 xl:px-6 text-center font-frank font-semibold text-sm xl:text-base transition-all duration-200 ${
                 activeTab === "past-semesters"
                   ? `${theme.background} ${theme.text_white}`
                   : "text-gray-600 hover:text-gray-800 hover:bg-gray-200"
@@ -71,27 +71,27 @@ const OverviewTab = ({ data }) => {
   return (
     <>
       <div className={`section-container-sm bg-gray-100 ${theme.text_black}`}>
-        <section className="w-full max-w-4xl mx-auto">
-          <h2 className="text-heading-md font-bold font-frank mb-section-sm">
+        <section className="w-full max-w-5xl xl:max-w-4xl mx-auto px-8 xl:px-12">
+          <h2 className="text-heading-sm xl:text-heading-md font-bold font-frank mb-section-sm">
             Our Mission
           </h2>
           <div className="space-y-responsive-sm">
-            <p className="text-body-md font-serif">
+            <p className="text-body-sm xl:text-body-md font-serif">
               At Boiler Quant, we are driven by a shared passion for exploring
               quantitative finance.
             </p>
-            <p className="text-body-md font-serif">
+            <p className="text-body-sm xl:text-body-md font-serif">
               We bring together enthusiastic students who are eager to dive into
               the exciting intersection of finance, mathematics, and data
               science.
             </p>
-            <p className="text-body-md font-serif">
+            <p className="text-body-sm xl:text-body-md font-serif">
               Our projects go beyond theory, immersing members in STEM-driven
               research and projects that replicate real-world challenges. We
               believe in the power of hands-on experience to transform knowledge
               into expertise, and our members are the ones to make it happen.
             </p>
-            <p className="text-body-md font-serif">
+            <p className="text-body-sm xl:text-body-md font-serif">
               Beyond projects, Boiler Quant is committed to education and career
               development. We strive to enlighten and inspire the next
               generation of quants.
@@ -133,12 +133,12 @@ const PastSemestersTab = () => {
   return (
     <>
       {/* Fall 2024 Highlights Section */}
-      <div className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-heading-md sm:text-heading-lg font-bold mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 font-frank text-center">
+      <div className="py-12 xl:py-16 px-4 xl:px-6 bg-white">
+        <div className="max-w-6xl xl:max-w-5xl mx-auto px-8 xl:px-12">
+          <h2 className="text-heading-sm xl:text-heading-md font-bold mb-6 xl:mb-8 sm:mb-8 xl:sm:mb-12 md:mb-12 xl:md:mb-16 lg:mb-16 xl:lg:mb-20 font-frank text-center">
             Fall 2024 Highlights
           </h2>
-          <div className="space-y-16">
+          <div className="space-y-12 xl:space-y-16">
             <Highlight
               theme={theme}
               image="/2024_fall/project_presentation_day.jpg"
@@ -166,12 +166,12 @@ const PastSemestersTab = () => {
       </div>
 
       {/* Future semesters can be added here */}
-      <div className="w-full bg-gray-100 py-16">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-heading-md font-bold font-frank mb-section-sm">
+      <div className="w-full bg-gray-100 py-12 xl:py-16">
+        <div className="max-w-5xl xl:max-w-4xl mx-auto text-center px-8 xl:px-12">
+          <h2 className="text-heading-sm xl:text-heading-md font-bold font-frank mb-section-sm">
             More Semesters Coming Soon
           </h2>
-          <p className="text-body-md font-serif text-gray-600">
+          <p className="text-body-sm xl:text-body-md font-serif text-gray-600">
             We'll be adding highlights from previous semesters as we continue to
             document our journey.
           </p>
@@ -199,7 +199,7 @@ const Highlight = ({ theme, image, title, content, reverse, button }) => {
           <div className="flex justify-center">
             <Link
               to="/projects"
-              className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm font-semibold py-2 px-4 rounded-lg transition-colors`}
+              className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-xs xl:text-body-sm font-semibold py-1.5 xl:py-2 px-3 xl:px-4 rounded-lg transition-colors`}
             >
               Learn More
             </Link>

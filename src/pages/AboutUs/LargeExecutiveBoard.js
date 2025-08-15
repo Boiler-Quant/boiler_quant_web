@@ -38,14 +38,14 @@ const LargeExecutiveBoard = ({ data }) => {
       <h2 className="section-title font-catchy">2025 Executive Board</h2>
       <div className="flex flex-row justify-center gap-responsive py-3">
         {data.slice(0, 2).map((exec, index) => (
-          <div key={index} className="flex flex-col w-64 xl:w-80">
+          <div key={index} className="flex flex-col w-64 xl:w-72">
             <ExecutiveCard exec={exec} index={index} />
           </div>
         ))}
       </div>
       <div className="flex flex-row justify-center gap-responsive py-3">
         {data.slice(2, 5).map((exec, index) => (
-          <div key={index} className="flex flex-col w-64 xl:w-80">
+          <div key={index} className="flex flex-col w-64 xl:w-72">
             <ExecutiveCard exec={exec} index={index} />
           </div>
         ))}

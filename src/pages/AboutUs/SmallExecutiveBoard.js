@@ -38,7 +38,10 @@ const SmallExecutiveBoard = ({ data }) => {
       <h2 className="section-title font-catchy">2025 Executive Board</h2>
       <div className="grid grid-cols-2 gap-responsive py-3 px-2 justify-items-center">
         {data.map((exec, index) => (
-          <div key={index} className="flex flex-col w-full max-w-72">
+          <div
+            key={index}
+            className="flex flex-col w-full max-w-72 xl:max-w-64"
+          >
             <ExecutiveCard exec={exec} index={index} />
           </div>
         ))}

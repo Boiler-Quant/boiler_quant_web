@@ -6,7 +6,7 @@ const Sponsors = () => {
   return (
     <>
       <div className={`${theme.dust} text-black section-container-sm`}>
-        <div className="container-responsive">
+        <div className="container-responsive mt-6">
           <h2 className="section-title font-frank">Sponsors</h2>
           <div className="flex flex-col items-center space-y-responsive">
             <img

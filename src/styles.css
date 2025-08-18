@@ -183,11 +183,11 @@
 
   /* Navigation */
   .nav-container {
-    @apply flex fixed top-0 left-0 w-full px-section-sm py-4 z-50 justify-between items-center transition-all duration-300;
+    @apply flex fixed top-0 left-0 w-full px-section-sm py-2 sm:py-3 md:py-4 z-50 justify-between items-center transition-all duration-300;
   }
 
   .nav-logo {
-    @apply h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16;
+    @apply h-6 sm:h-8 md:h-10 lg:h-12 xl:h-14;
   }
 
   .nav-links {
@@ -199,7 +199,7 @@
   }
 
   .nav-mobile-button {
-    @apply md:hidden text-white focus:outline-none p-2;
+    @apply md:hidden text-white focus:outline-none p-1;
   }
 
   .nav-drawer {

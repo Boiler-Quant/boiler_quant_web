@@ -71,13 +71,17 @@ const Main = () => {
           </p> */}
 
           <p className="text-body-lg lg:mb-3 font-semibold">
-            Fall 2025 Recruitment Coming Soon!
+            Fall 2025 Applications Opening Soon!
           </p>
           <p className="text-body-md mb-section-sm">
-            We'll be announcing our Fall 2025 recruitment timeline shortly. Stay
-            tuned for updates and follow us on Instagram and LinkedIn to be the
-            first to know when applications open!
+            Fall 2025 Recruitment Schedule is now available.
           </p>
+          <Link
+            to="/join-us"
+            className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm font-semibold py-2 px-4 rounded-lg transition-colors mb-section-sm`}
+          >
+            View Timeline
+          </Link>
         </section>
       </div>
     </div>

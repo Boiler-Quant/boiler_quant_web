@@ -44,43 +44,19 @@ const Main = () => {
           <h2 className="text-heading-md font-bold mb-section-sm font-catchy">
             Join Us
           </h2>
-          {/* <p className="text-body-lg mb-section-sm font-semibold">
-            Applications for Spring 2025 Are Now Closed.
-          </p> */}
-          {/* <h2 className="text-body-lg mb-1 lg:mb-3 font-semibold">
-            What's Next?
-          </h2>
-          <p className="text-body-md mb-2 lg:mb-4">
-            Our team is currently reviewing all applications, and we'll be
-            reaching out to applicants shortly. <br></br>
-            For a detailed timeline, please visit our "Join Us" page.
-          </p>
-          <Link
-            to="/join-us"
-            className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm font-semibold py-2 px-4 rounded-lg transition-colors mb-section-sm`}
-          >
-            Join Us Page
-          </Link> */}
-          {/* <p className="text-body-lg lg:mb-3 font-semibold">
-            Missed the Deadline?
-          </p>
-          <p className="text-body-md mb-section-sm">
-            While applications for this cycle are closed, we'd love for you to
-            consider applying next semester. <br></br> Be sure to check back
-            here or follow us on Instagram and LinkedIn for updates!
-          </p> */}
 
           <p className="text-body-lg lg:mb-3 font-semibold">
-            Fall 2025 Applications Opening Soon!
+            Fall 2025 Applications Are Now Open!
           </p>
           <p className="text-body-md mb-section-sm">
-            Fall 2025 Recruitment Schedule is now available.
+            Applications for Fall 2025 are now open. Apply today to join our
+            quantitative finance community!
           </p>
           <Link
             to="/join-us"
             className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm font-semibold py-2 px-4 rounded-lg transition-colors mb-section-sm`}
           >
-            View Timeline
+            Apply Now
           </Link>
         </section>
       </div>

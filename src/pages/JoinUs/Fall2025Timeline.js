@@ -9,33 +9,39 @@ import TimelineDot from "@mui/lab/TimelineDot";
 const events = [
   {
     date: "8/24",
-    title: "APPLICATIONS OPEN",
+    title: "APPLICATIONS OPENED",
     time: "@ 11:59 PM",
+    status: "completed",
   },
   {
     date: "8/28",
     title: "FIRST CALLOUT",
     time: "@ 7:30 PM RAWL 2082",
+    status: "completed",
   },
   {
     date: "9/2",
     title: "SECOND CALLOUT",
     time: "@ 7:30 PM RAWL 2082",
+    status: "completed",
   },
   {
     date: "9/6",
     title: "APPLICATIONS DUE",
     time: "@ 11:59 PM",
+    status: "completed",
   },
   {
     date: "9/9",
-    title: "INTERVIEWS BEGIN",
+    title: "INTERVIEWS BEGAN",
     time: "",
+    status: "completed",
   },
   {
     date: "9/12",
-    title: "DECISIONS ANNOUNCEMENT",
+    title: "DECISIONS ANNOUNCED",
     time: "",
+    status: "completed",
   },
 ];
 
@@ -45,9 +51,17 @@ export default function Fall2025Timeline() {
       {events.map((event, index) => (
         <TimelineItem key={index} className="w-full">
           <TimelineSeparator>
-            <TimelineDot className="size-2 lg:size-10" />
+            <TimelineDot
+              className={`size-2 lg:size-10 ${
+                event.status === "completed" ? "bg-green-500" : ""
+              }`}
+            />
             {index < events.length - 1 && (
-              <TimelineConnector className="h-4 sm:border-2 lg:h-20" />
+              <TimelineConnector
+                className={`h-4 sm:border-2 lg:h-20 ${
+                  event.status === "completed" ? "border-green-500" : ""
+                }`}
+              />
             )}
           </TimelineSeparator>
           <TimelineContent>

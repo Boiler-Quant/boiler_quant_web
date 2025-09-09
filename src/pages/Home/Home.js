@@ -46,18 +46,19 @@ const Main = () => {
           </h2>
 
           <p className="text-body-lg lg:mb-3 font-semibold">
-            Fall 2025 Applications Are Now Open!
+            Fall 2025 Applications Are Now Closed
           </p>
           <p className="text-body-md mb-section-sm">
-            Applications for Fall 2025 are now open. Apply today to join our
-            quantitative finance community!
+            Thank you to everyone who applied! We have completed our Fall 2025
+            recruitment process. <br />
+            Stay tuned for future opportunities to join us!
           </p>
-          <Link
+          {/* <Link
             to="/join-us"
-            className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm font-semibold py-2 px-4 rounded-lg transition-colors mb-section-sm`}
+            className={`inline-block bg-gray-600 text-white text-body-sm font-semibold py-2 px-4 rounded-lg mb-section-sm cursor-not-allowed`}
           >
-            Apply Now
-          </Link>
+            Applications Closed
+          </Link> */}
         </section>
       </div>
     </div>

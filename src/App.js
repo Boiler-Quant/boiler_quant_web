@@ -1,6 +1,4 @@
-// React and Tailwind CSS setup for the Purdue Quantitative Finance Club Website
-
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,7 +10,6 @@ import Home from "./pages/Home/Home";
 import TabbedAbout from "./pages/AboutUs/TabbedAbout";
 import BottomContact from "./components/BottomContact";
 import Projects from "./pages/Projects/Projects";
-import InProgressPage from "./components/InProgressPage";
 import Sponsors from "./pages/Sponsors/Sponsors";
 
 import { ThemeProvider } from "./theme-context";
@@ -35,40 +32,6 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
-  const [executiveData, setExecutiveData] = useState([]);
-  const [projectData, setProjectData] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const executiveResponse = await fetch(
-          "/api/fetchData?tableName=Executive"
-        ); // Use relative path
-        if (!executiveResponse.ok) {
-          throw new Error("Error fetching data");
-        }
-
-        const executiveResult = await executiveResponse.json();
-        setExecutiveData(executiveResult.records);
-
-        const projectResponse = await fetch(
-          "/api/fetchData?tableName=Projects"
-        ); // Use relative path
-        if (!projectResponse.ok) {
-          throw new Error("Error fetching data");
-        }
-
-        const projectResult = await projectResponse.json();
-        setProjectData(projectResult.records);
-      } catch (err) {
-        setError(err.message);
-      }
-    }
-
-    fetchData();
-  }, []);
-
   return (
     <ThemeProvider>
       <Router>
@@ -78,14 +41,8 @@ const App = () => {
           <div className="app-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route
-                path="/about-us"
-                element={<TabbedAbout data={executiveData} />}
-              />
-              <Route
-                path="/projects"
-                element={<Projects projects={projectData} />}
-              />
+              <Route path="/about-us" element={<TabbedAbout />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="/sponsors" element={<Sponsors />} />
               <Route path="/join-us" element={<JoinUs />} />
             </Routes>

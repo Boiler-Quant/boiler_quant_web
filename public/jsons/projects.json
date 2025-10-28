@@ -1,0 +1,192 @@
+﻿[
+  {
+    "Title": "Finmath Library",
+    "Summary": "This team developed finmath, a financial math calculation library that offers the functionality of a traditional Python library while leveraging C/C++ for enhanced speed and efficiency.",
+    "Contributors": "Shashank Mukkera, Prajwal Shah, Anish Kambhampati, Segyul Park, Om Janamanchi, Kobe Huang, Ben Wu, Aviral Rastogi, Sarthak Tandon",
+    "Index": 1,
+    "Tags": ["Python", "Quant Dev"],
+    "Link": "https://github.com/Boiler-Quant/finmath",
+    "Semester": "Fall 2024"
+  },
+  {
+    "Title": "Options Pricing",
+    "Summary": "This team developed an ARIMA and LSTM model to predict implied volatility, using Streamlit and interpolation techniques to visualize the implied volatility surface.",
+    "Contributors": "Mihika Ghaisas, Ritwik Jain, Lucas Embrey, Parth Hathalia, Rich Smith",
+    "Index": 2,
+    "Tags": ["Python", "Quant Research"],
+    "Link": "",
+    "Semester": "Fall 2024"
+  },
+  {
+    "Title": "Sports Arbitrage",
+    "Summary": "Starting broadly, this team identified NBA player props as a key area for arbitrage potential. They then built a website, integrating sportsbook APIs, to find and document arbitrage opportunities their algorithm identified.",
+    "Contributors": "Jamie Borst, Sebastian Bohrt, Aditya Naidu, Kestan Kamei, Ephram Chun",
+    "Index": 3,
+    "Tags": ["Python", "Quant Trading"],
+    "Link": "https://github.com/Boiler-Quant/bqfgsports",
+    "Semester": "Fall 2024"
+  },
+  {
+    "Title": "FPGA Mini Projects",
+    "Summary": "This team gained hands on experience with FPGAs, advanced hardware often used in quant finance for ultra-low-latency performance. Projects included building a calculator, conducting an echo test, and developing a VGA proof-of-concept.",
+    "Contributors": "Rohin Nair, Justin Shakergayen, Thanh Bui Minh",
+    "Index": 4,
+    "Tags": ["Hardware", "Quant Dev"],
+    "Link": "",
+    "Semester": "Fall 2024"
+  },
+  {
+    "Title": "Stochastic Markov Models",
+    "Summary": "This team leveraged Python and Jupyter Notebook to identify hidden Markov models and analyze stochastic processes, focusing on their applications in commodities markets and cyclical market conditions.",
+    "Contributors": "Avi Kumar, Peter Henwood, Pritam Hazra",
+    "Index": 5,
+    "Tags": ["Python", "Quant Research"],
+    "Link": "",
+    "Semester": "Fall 2024"
+  },
+  {
+    "Title": "Adaptive Algorithms",
+    "Summary": "This team applied online learning methods in energy markets, focusing on ERCOT to dynamically update model parameters and maximize value in an ever-shifting environment.",
+    "Contributors": "Arnav Arora, Ryan Wans, Srikar Lanka, Matthew Wind, Alexander Brady, Akash Gaonkar, Mario Arenas",
+    "Index": 6,
+    "Tags": ["Python", "Quant Research"],
+    "Link": "https://github.com/Boiler-Quant/bqfg-online-learning",
+    "Semester": "Fall 2024"
+  },
+  {
+    "Title": "Sports Arbitrage",
+    "Summary": "Identifying hedging opportunities within NBA player props, optimizing strategies, and launching a website for tracking positive EV bets.",
+    "Contributors": "Jamie Borst, Sebastian Bohrt, Adi Naidu, Leo Navarro, Parth Hathalia",
+    "Index": 7,
+    "Tags": ["Quant Trading"],
+    "Link": "https://github.com/Boiler-Quant/bqfgsports",
+    "Semester": "Spring 2025"
+  },
+  {
+    "Title": "Finmath Library",
+    "Summary": "Developing a C/C++ financial math library, bound to Python, with a working pip package and expanded functionality.",
+    "Contributors": "Shashank Mukkera, Prajwal Shah, Benjamin Wu, Aviral Rastogi, Rahul Siddharth, Hayagreev Dilip, Sarthak Tandon",
+    "Index": 8,
+    "Tags": ["Quant Dev"],
+    "Link": "https://github.com/Boiler-Quant/finmath",
+    "Semester": "Spring 2025"
+  },
+  {
+    "Title": "FPGA-based Pricing Model",
+    "Summary": "Building an FPGA-based options pricing engine, processing real-time data for low-latency Black-Scholes calculations.",
+    "Contributors": "Rohin Nair, Avi Kumar, Caleb Suhy, Nishaant Shah, Parth Gupta",
+    "Index": 9,
+    "Tags": ["Hardware", "Quant Dev"],
+    "Link": "https://github.com/Boiler-Quant/sp25fpga",
+    "Semester": "Spring 2025"
+  },
+  {
+    "Title": "Ports Startup",
+    "Summary": "Enhancing fintech portfolio platform Ports, members act as developers to add social features and improve user experience through mini projects.",
+    "Contributors": "Pradyum Chitlu, Richard Smith, Matthew Wind, Sandi Kambhampati",
+    "Index": 10,
+    "Tags": ["Quant Dev"],
+    "Link": "https://invest-ports.com/",
+    "Semester": "Spring 2025"
+  },
+  {
+    "Title": "ML Sentiment Analysis",
+    "Summary": "Using NLP to analyze news, social media, and Google Trends, generating ML-based trading signals and market sentiment insights.",
+    "Contributors": "Mario Arenas, Akash Gaonkar, Zayn Rekhi, Nathan Li, Pritam Hazra",
+    "Index": 11,
+    "Tags": ["Machine Learning", "Quant Dev"],
+    "Link": "https://github.com/Boiler-Quant/NLP-Sentiment",
+    "Semester": "Spring 2025"
+  },
+  {
+    "Title": "Crypto Arbitrage",
+    "Summary": "Detecting triangular arbitrage on Binance, simulating trades and optimizing execution timing.",
+    "Contributors": "Arnav Kalekar, Peter Henwood, Om Janamanchi, Yohaan Chokhany, Aarav Mohanty, Aiden Drepaniotis",
+    "Index": 12,
+    "Tags": ["Quant Trading", "Quant Research"],
+    "Link": "",
+    "Semester": "Spring 2025"
+  },
+  {
+    "Title": "Predictive Player Props",
+    "Summary": "Using ML models to forecast NFL player stats, such as wide receiver yards, and comparing predictions against betting lines",
+    "Contributors": "Tomas Valenzuela, Uday Manneru, Sanjith Prabhu, Sreekar Gudipati, Nihal Gunukula",
+    "Index": 13,
+    "Tags": ["Machine Learning", "Quant Trading"],
+    "Link": "",
+    "Semester": "Spring 2025"
+  },
+  {
+    "Title": "GPU Acceleration",
+    "Summary": "Reimplementing ML models with custom GPU kernels to benchmark training and inference speedups.",
+    "Contributors": "Rahul Siddharth, Aiden Huang, Aadi Jain, Om Janamanchi",
+    "Index": 14,
+    "Tags": ["C++", "Quant Dev"],
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "Finmath Binding Library",
+    "Summary": "Developing a C/C++ financial math library, bound to Python, with a working pip package and expanded functionality.",
+    "Contributors": "Prajwal Shah, Shashank Mukkera, Daniyal Bekinalkar, Chenxi Zhang, Lalit Boyapati, Aviral Rastogi",
+    "Index": 15,
+    "Tags": ["Python", "C++", "Quant Dev"],
+    "Link": "https://github.com/Boiler-Quant/finmath",
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "Sportsbook Scraper",
+    "Summary": "Fast web scraper to pull sportsbook odds for arbitrage and +EV sports trading.",
+    "Contributors": "Sebastian Bohrt, Mike Carranza, Ethan Lee",
+    "Index": 16,
+    "Tags": ["Quant Trading"],
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "Alt Data Momentum Trading",
+    "Summary": "Python backtester combining alternative data (Google Trends, app store ranks, weather) with technical indicators to predict stock moves.",
+    "Contributors": "Aarav Mohanty, Pradyum Chitlu, Matthew Wind, Peter Henwood",
+    "Index": 17,
+    "Tags": ["Quant Research"],
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "Tradify",
+    "Summary": "AI powered agent that takes a stock ticker and outputs options trades with quantitative backing.",
+    "Contributors": "Parth Gupta, Sandi Kambhampati, Ayush Agarwal, Uday Manneru, Mihika Shrivastava",
+    "Index": 18,
+    "Tags": ["Quant Dev", "Quant Research"],
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "Market Mechanics",
+    "Summary": "Detecting triangular arbitrage on Binance, simulating trades and optimizing execution timing.",
+    "Contributors": "Nathan Li, Segyul Park, Arnav Kalekar, Sairah Ghule, Maraio Arenas, Shivani Sinha, Rohit Manjunath",
+    "Index": 19,
+    "Tags": ["Quant Research"],
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "Social Stock Exchange",
+    "Summary": "Partnering with a startup, building an exchange where fans can invest in creators, teams, and cultural icons like stocks.",
+    "Contributors": "Parth Hathalia, David Oprea, Ropan Datta, Maria Clara Valle Gomes, Pranith Ravella, Rohan Gupta",
+    "Index": 20,
+    "Tags": ["Quant Trading"],
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "Prediction Markets Alpha Mining",
+    "Summary": "Through prediction markets like Kalshi and Polymarket, explore arbitrage and relative value market making opportunities.",
+    "Contributors": "Leo Navarro, Sayam Goyal, Trinidad Segovia, Yohaan Chokhany, Dhruv Jhamb",
+    "Index": 21,
+    "Tags": ["Quant Trading"],
+    "Semester": "Fall 2025"
+  },
+  {
+    "Title": "FPGA",
+    "Summary": "Trying to replicate strategies used by high frequency trading firms with FPGAs gifted by Belvedere.",
+    "Contributors": "Caleb Suhy, Riya Chamala, Navneeth Krishna, Pragathi Arunkumar, Aiden Drepaniotis",
+    "Index": 22,
+    "Tags": ["Hardware", "Quant Dev"],
+    "Semester": "Fall 2025"
+  }
+]

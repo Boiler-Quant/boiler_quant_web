@@ -25,7 +25,7 @@ const BottomContact = () => {
         >
           <div className="footer-link">
             <img
-              src="/instagram-logo.png"
+              src="/logos/instagram-logo.png"
               alt="Instagram"
               className="footer-link-icon"
             />
@@ -39,7 +39,7 @@ const BottomContact = () => {
         >
           <div className="footer-link">
             <img
-              src="/linkedin-logo.png"
+              src="/logos/linkedin-logo.png"
               alt="LinkedIn"
               className="footer-link-icon"
             />
@@ -54,7 +54,7 @@ const BottomContact = () => {
         >
           <div className="footer-link">
             <img
-              src="/mail-logo.png"
+              src="/logos/mail-logo.png"
               alt="Email"
               className="footer-link-icon"
             />

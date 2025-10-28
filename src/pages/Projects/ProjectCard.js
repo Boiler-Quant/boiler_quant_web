@@ -32,10 +32,10 @@ const ProjectCard = ({ project }) => {
       >
         <CardContent>
           <h2 className="text-heading-sm py-2 lg:py-4 font-catchy font-bold">
-            {project["fields"]["Title"]}
-            {project["fields"]["Link"] && (
+            {project["Title"]}
+            {project["Link"] && (
               <a
-                href={project["fields"]["Link"]}
+                href={project["Link"]}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-2"
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
             )}
           </h2>
           <div className="flex flex-wrap gap-2">
-            {project["fields"]["Tags"].map((tag, index) => (
+            {project["Tags"].map((tag, index) => (
               <span
                 key={index}
                 className={`text-body-xs lg:text-body-sm px-3 py-1 rounded-full ${theme.dust} ${theme.text_black} font-catchy`}
@@ -55,11 +55,9 @@ const ProjectCard = ({ project }) => {
               </span>
             ))}
           </div>
-          <p className="text-body-md font-catchy py-2">
-            {project["fields"]["Summary"]}
-          </p>
+          <p className="text-body-md font-catchy py-2">{project["Summary"]}</p>
           <p className="text-body-sm py-1 lg:text-body-md font-catchy">
-            Contributors: {project["fields"]["Contributors"]}
+            Contributors: {project["Contributors"]}
           </p>
           <IconButton
             sx={{

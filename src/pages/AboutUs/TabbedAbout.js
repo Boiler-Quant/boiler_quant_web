@@ -5,9 +5,17 @@ import LargeExecutiveBoard from "./LargeExecutiveBoard";
 import SmallExecutiveBoard from "./SmallExecutiveBoard";
 import { CircularProgress } from "@mui/material";
 
-const TabbedAbout = ({ data }) => {
+const TabbedAbout = () => {
   const theme = useTheme();
   const [activeTab, setActiveTab] = useState("overview");
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("/jsons/executives.json")
+      .then((res) => res.json())
+      .then(setData)
+      .catch(console.error);
+  }, []);
 
   return (
     <div>

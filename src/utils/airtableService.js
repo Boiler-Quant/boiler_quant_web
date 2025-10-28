@@ -1,3 +1,4 @@
+import { deepPurple } from "@mui/material/colors";
 import axios from "axios";
 
 // const response = await axios.get(
@@ -10,6 +11,7 @@ import axios from "axios";
 // );
 
 // Function to fetch data from Airtable
+// @deprecated
 export const fetchAirtableData = async () => {
   try {
     const response = await axios.get(

@@ -1,11 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "../../theme-context";
 import ProjectCard from "./ProjectCard";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { CircularProgress } from "@mui/material";
 
-const Projects = ({ projects }) => {
+const Projects = () => {
+  const [showSpring25, setShowSpring25] = useState(false);
   const [showFall24, setShowFall24] = useState(false);
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("/jsons/projects.json")
+      .then((res) => res.json())
+      .then(setProjects)
+      .catch(console.error);
+  }, []);
 
   const theme = useTheme();
 
@@ -50,12 +59,12 @@ const Projects = ({ projects }) => {
         <>
           <div className="container-responsive">
             <h2 className="text-heading-md font-bold font-catchy mb-section-sm">
-              Spring `25 Projects
+              Fall `25 Projects
             </h2>
 
             <div className="space-y-4">
               {projects
-                .filter((project) => project.fields.Semester === "Spring 2025")
+                .filter((project) => project.Semester === "Fall 2025")
                 .map((project, index) => (
                   <ProjectCard key={index} project={project} />
                 ))}
@@ -64,7 +73,26 @@ const Projects = ({ projects }) => {
 
           <hr className="section-margin border-t border-white/30" />
 
-          <div className="container-responsive">
+          <div className="container-responsive my-4">
+            <button
+              className="w-full text-left text-heading-md font-bold font-catchy mb-section-sm"
+              onClick={() => setShowSpring25((prev) => !prev)}
+            >
+              {showSpring25 ? "▼ Spring `25 Projects" : "▶ Spring `25 Projects"}
+            </button>
+
+            {showSpring25 && (
+              <div className="space-y-4">
+                {projects
+                  .filter((project) => project.Semester === "Spring 2025")
+                  .map((project, index) => (
+                    <ProjectCard key={index} project={project} />
+                  ))}
+              </div>
+            )}
+          </div>
+
+          <div className="container-responsive my-4">
             <button
               className="w-full text-left text-heading-md font-bold font-catchy mb-section-sm"
               onClick={() => setShowFall24((prev) => !prev)}
@@ -75,7 +103,7 @@ const Projects = ({ projects }) => {
             {showFall24 && (
               <div className="space-y-4">
                 {projects
-                  .filter((project) => project.fields.Semester === "Fall 2024")
+                  .filter((project) => project.Semester === "Fall 2024")
                   .map((project, index) => (
                     <ProjectCard key={index} project={project} />
                   ))}

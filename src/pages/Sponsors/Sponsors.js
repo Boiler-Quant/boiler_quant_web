@@ -10,12 +10,12 @@ const Sponsors = () => {
           <h2 className="section-title font-frank">Sponsors</h2>
           <div className="flex flex-col items-center space-y-responsive">
             <img
-              src="/old_mission_logo.png"
+              src="/logos/old_mission_logo.png"
               alt="Old Mission"
               className="w-40 sm:w-52 md:w-64 lg:w-72 xl:w-80 h-auto object-contain"
             />
             <img
-              src="/peak6_logo.png"
+              src="/logos/peak6_logo.png"
               alt="Peak 6"
               className="w-40 sm:w-52 md:w-64 lg:w-72 xl:w-80 h-auto object-contain"
             />

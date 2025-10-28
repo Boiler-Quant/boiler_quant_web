@@ -4,11 +4,9 @@ const ExecutiveCard = ({ exec, index }) => {
       {/* Name and Position */}
       <div className="section-1">
         <h3 className="text-heading-sm font-bold font-catchy mb-1">
-          {exec["fields"]["Full Name"]}
+          {exec["Full Name"]}
         </h3>
-        <p className="text-body-md font-semibold font-catchy">
-          {exec["fields"]["Role"]}
-        </p>
+        <p className="text-body-md font-semibold font-catchy">{exec["Role"]}</p>
       </div>
 
       {/* Image */}
@@ -19,7 +17,7 @@ const ExecutiveCard = ({ exec, index }) => {
           className="mx-auto mb-4 px-2 w-full"
           style={{
             aspectRatio: "1/1",
-            backgroundImage: `url(${exec["fields"]["Photo"][0]["url"]})`,
+            backgroundImage: `url(${exec["Photo"]})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -29,13 +27,13 @@ const ExecutiveCard = ({ exec, index }) => {
       {/* Description */}
       <div className="section-3">
         <p className="text-body-md font-semibold font-catchy mb-2">
-          {exec["fields"]["Major"]}
+          {exec["Major"]}
         </p>
         <p className="text-body-md font-catchy mb-2">
-          Interests: {exec["fields"]["Interests"]}
+          Interests: {exec["Interests"]}
         </p>
         <a
-          href={exec["fields"]["LinkedIn"]}
+          href={exec["LinkedIn"]}
           className="text-blue-400 hover:underline text-body-sm cursor-pointer font-catchy"
           target="_blank"
           rel="noopener noreferrer"

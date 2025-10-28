@@ -119,7 +119,7 @@
   {
     "Title": "GPU Acceleration",
     "Summary": "Reimplementing ML models with custom GPU kernels to benchmark training and inference speedups.",
-    "Contributors": "Rahul Siddharth, Aiden Huang, Aadi Jain, Om Janamanchi",
+    "Contributors": "Nishaant Shah, Rahul Siddharth, Aiden Huang, Aadi Jain, Om Janamanchi",
     "Index": 14,
     "Tags": ["C++", "Quant Dev"],
     "Semester": "Fall 2025"

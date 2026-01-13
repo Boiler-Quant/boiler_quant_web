@@ -6,29 +6,30 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 
+
 const events = [
   {
-    date: "1/19",
+    date: "1/12",
     title: "APPLICATIONS OPEN",
-    time: "@ 11:59 PM",
+    time: "@ 12:00 AM",
   },
   {
-    date: "1/21",
+    date: "1/16",
     title: "FIRST CALLOUT",
-    time: "@ 7:30PM RAWL 1062",
+    time: "@ 7:00 PM WALC B091",
   },
   {
-    date: "1/22",
+    date: "1/20",
     title: "SECOND CALLOUT",
-    time: "@ 7:30PM RAWL 1062",
+    time: "@ 7:00 PM LILY 3118",
   },
   {
-    date: "1/25",
+    date: "1/23",
     title: "APPLICATIONS DUE",
     time: "@ 11:59 PM",
   },
   {
-    date: "1/28",
+    date: "1/26",
     title: "INTERVIEWS BEGIN",
     time: "",
   },

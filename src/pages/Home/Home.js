@@ -46,12 +46,10 @@ const Main = () => {
           </h2>
 
           <p className="text-body-lg lg:mb-3 font-semibold">
-            Fall 2025 Applications Are Now Closed
+            Spring 2026 Applications Are Now Open!
           </p>
           <p className="text-body-md mb-section-sm">
-            Thank you to everyone who applied! We have completed our Fall 2025
-            recruitment process. <br />
-            Stay tuned for future opportunities to join us!
+            We look forward to reviewing your applications. 
           </p>
           {/* <Link
             to="/join-us"

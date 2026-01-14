@@ -7,29 +7,29 @@ const HighlightGroup = () => {
   return (
     <section className="section-container bg-white">
       <h2 className="text-heading-sm xl:text-heading-md font-bold font-frank mb-section-sm text-center">
-        Spring 2025 Highlights
+        Fall 2025 Highlights
       </h2>
       <div className="section-content px-8 xl:px-12">
         <Highlight
           theme={theme}
-          image="/2025_spring/chicago_trek.jpeg"
+          image="/2025_fall/office.jpg"
           title="Chicago Office Tours"
-          content="We visited Old Mission, Akuna Capital, PEAK6, and Gelber Group LLC during our Spring 2025 Trek, exploring options theory, trading simulations, and each firm’s unique culture."
+          content="We visited Old Mission, The Options Clearing Corporation, TransMarketGroup, Valkyrie Trading, and IMC Trading during our Fall 2025 Trek, learning more about the work quantitative traders and developers do on the day to day, trading simulations, and each firm’s unique culture."
         />
         {/* Highlight 2 */}
         <Highlight
           theme={theme}
-          image="/2025_spring/poker_tournament.jpeg"
+          image="/2025_fall/poker_tourna.jpeg"
           title="Poker Tournament"
-          content="We hosted a weekend poker tournament and other games like trading simulations and the Estimathon to sharpen strategic thinking and decision-making."
+          content="We hosted a poker tournament and other games like trading simulations and the Estimathon to sharpen strategic thinking and decision-making."
           reverse
         />
         {/* Highlight 3 */}
         <Highlight
           theme={theme}
-          image="/2025_spring/jeremy_wien.jpeg"
-          title="Guest Speaker Session"
-          content="Welcomed Jeremy Wien, poker player and quant trader, for insights on career, strategy, and high-stakes decision-making."
+          image="/2025_fall/quant_presentation.jpeg"
+          title="Final Presentations"
+          content="The final project presentations showcased the hard work and talent of our members. A proud moment highlighting the ideas that were turned into impactful solutions."
         />
       </div>
 

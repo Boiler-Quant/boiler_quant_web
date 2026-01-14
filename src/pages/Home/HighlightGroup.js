@@ -12,7 +12,7 @@ const HighlightGroup = () => {
       <div className="section-content px-8 xl:px-12">
         <Highlight
           theme={theme}
-          image="/2025_fall/office.jpg"
+          image="/2025_fall/office.JPG"
           title="Chicago Office Tours"
           content="We visited Old Mission, The Options Clearing Corporation, TransMarketGroup, Valkyrie Trading, and IMC Trading during our Fall 2025 Trek, learning more about the work quantitative traders and developers do on the day to day, trading simulations, and each firm’s unique culture."
         />

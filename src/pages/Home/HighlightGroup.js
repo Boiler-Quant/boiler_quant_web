@@ -36,7 +36,7 @@ const HighlightGroup = () => {
       {/* Spring 2025 Projects Call-to-Action */}
       <div className="text-center mt-8 xl:mt-12">
         <p className="text-body-sm xl:text-body-md font-serif text-gray-600 mb-4 xl:mb-6">
-          Want to see more of what we accomplished as a club?
+          Want to see more of what we've accomplished as a club?
         </p>
         <Link
           to="/projects"

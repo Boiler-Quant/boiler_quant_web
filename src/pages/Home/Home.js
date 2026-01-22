@@ -1,12 +1,13 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-vars 
 import { Link } from "react-router-dom";
 import { useTheme } from "../../theme-context";
 import HeroSection from "./HeroSection";
 import WhatWeDo from "./WhatWeDo";
 import HighlightGroup from "./HighlightGroup";
-// eslint-disable-next-line no-unused-vars
+
 const Main = () => {
+  // eslint-disable-next-line no-unused-vars 
   const theme = useTheme();
 
   return (

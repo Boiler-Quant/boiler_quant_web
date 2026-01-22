@@ -188,5 +188,59 @@
     "Index": 22,
     "Tags": ["Hardware", "Quant Dev"],
     "Semester": "Fall 2025"
+  },
+  {
+    "Title": "GPU Acceleration",
+    "Summary": "Reimplementing ML models with custom GPU kernals to benchmark training and inference speedups.",
+    "Contributors": "Prajwal Shah, Shashank Mukkera",
+    "Index": 23,
+    "Tags": ["C++", "Quant Dev"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "Finmath Binding Library",
+    "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality.",
+    "Contributors": "Nishaant Shah",
+    "Index": 24,
+    "Tags": ["Python", "C++", "Quant Dev"],
+    "Link": "https://github.com/Boiler-Quant/options-simulator",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "FPGA Pricing",
+    "Summary": "Implementing trading models and high frequency strategies at the hardware level by using FPGAs gifted by Belvedere.",
+    "Contributors": "Riya Chamala",
+    "Index": 25,
+    "Tags": ["Quant Trading", "Python"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "Market Mechanics",
+    "Summary": "Simulating the market order book by modeling state-dependent limit events, in order to evaluate market making strategies under realistic order flow.",
+    "Contributors": "Nathan Li, Segyul Park",
+    "Index": 26,
+    "Tags": ["C++", "Quant Dev"],
+    "Link": "https://github.com/Boiler-Quant/gpu-backtester",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "StockGuessr",
+    "Summary": "Application for paper trading game that feeds players selected information.",
+    "Contributors": "Aarav Mohanty, Pradyum Chitlu",
+    "Index": 27,
+    "Tags": ["Python", "Quant Trading"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "FPGA Options Engine",
+    "Summary": "Applying AI modeles and RAG agents to conduct research on financial products.",
+    "Contributors": "Ayush Agarwal",
+    "Index": 28,
+    "Tags": ["Machine Learning", "Quant Dev"],
+    "Link": "",
+    "Semester": "Spring 2026"
   }
 ]

@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { CircularProgress } from "@mui/material";
 
 const Projects = () => {
+  const [showFall25, setShowFall25] = useState(false);
   const [showSpring25, setShowSpring25] = useState(false);
   const [showFall24, setShowFall24] = useState(false);
   const [projects, setProjects] = useState([]);
@@ -19,9 +20,7 @@ const Projects = () => {
   const theme = useTheme();
 
   return (
-    <div
-      className={`section-container ${theme.background} ${theme.text_white}`}
-    >
+    <div className={`section-container ${theme.background} ${theme.text_white}`}>
       {/* Banner Section */}
       <div
         className={`${theme.background} ${theme.text_white} py-8 flex flex-row items-center justify-center`}
@@ -57,14 +56,14 @@ const Projects = () => {
         </div>
       ) : (
         <>
+          {/* Spring 2026 - Default visible projects */}
           <div className="container-responsive">
             <h2 className="text-heading-md font-bold font-catchy mb-section-sm">
-              Fall `25 Projects
+              Spring `26 Projects
             </h2>
-
             <div className="space-y-4">
               {projects
-                .filter((project) => project.Semester === "Fall 2025")
+                .filter((project) => project.Semester === "Spring 2026")
                 .map((project, index) => (
                   <ProjectCard key={index} project={project} />
                 ))}
@@ -73,6 +72,27 @@ const Projects = () => {
 
           <hr className="section-margin border-t border-white/30" />
 
+          {/* Fall 2025 - Collapsible */}
+          <div className="container-responsive my-4">
+            <button
+              className="w-full text-left text-heading-md font-bold font-catchy mb-section-sm"
+              onClick={() => setShowFall25((prev) => !prev)}
+            >
+              {showFall25 ? "▼ Fall `25 Projects" : "▶ Fall `25 Projects"}
+            </button>
+
+            {showFall25 && (
+              <div className="space-y-4">
+                {projects
+                  .filter((project) => project.Semester === "Fall 2025")
+                  .map((project, index) => (
+                    <ProjectCard key={index} project={project} />
+                  ))}
+              </div>
+            )}
+          </div>
+
+          {/* Spring 2025 */}
           <div className="container-responsive my-4">
             <button
               className="w-full text-left text-heading-md font-bold font-catchy mb-section-sm"
@@ -92,6 +112,7 @@ const Projects = () => {
             )}
           </div>
 
+          {/* Fall 2024 */}
           <div className="container-responsive my-4">
             <button
               className="w-full text-left text-heading-md font-bold font-catchy mb-section-sm"

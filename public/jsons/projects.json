@@ -159,7 +159,7 @@
   },
   {
     "Title": "Market Mechanics",
-    "Summary": "Detecting triangular arbitrage on Binance, simulating trades and optimizing execution timing.",
+    "Summary": "Researching and implementing methods to simulate market-making order books. In parallel, replicating key papers on pairs trading and designing custom RL based approaches.",
     "Contributors": "Nathan Li, Segyul Park, Arnav Kalekar, Sairah Ghule, Maraio Arenas, Shivani Sinha, Rohit Manjunath",
     "Index": 19,
     "Tags": ["Quant Research"],

@@ -19,7 +19,7 @@
   },
   {
     "Title": "Sports Arbitrage",
-    "Summary": "Starting broadly, this team identified NBA player props as a key area for arbitrage potential. They then created a website, integrating sportsbook APIs, to find and document arbitrage opportunities their algorithm identified.",
+    "Summary": "Starting broadly, this team identified NBA player props as a key area for arbitrage potential. They then built a website, integrating sportsbook APIs, to find and document arbitrage opportunities their algorithm identified.",
     "Contributors": "Jamie Borst, Sebastian Bohrt, Aditya Naidu, Kestan Kamei, Ephram Chun",
     "Index": 3,
     "Tags": ["Python", "Quant Trading"],

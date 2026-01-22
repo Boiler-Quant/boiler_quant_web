@@ -42,7 +42,7 @@ const HighlightGroup = () => {
           to="/projects"
           className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-sm xl:text-body-md font-semibold py-2 xl:py-3 px-4 xl:px-6 rounded-lg transition-colors`}
         >
-          Check Out Our Spring 2025 Projects!
+          Check Out Our Fall 2025 Projects!
         </Link>
       </div>
     </section>

@@ -191,55 +191,55 @@
   },
   {
     "Title": "GPU Acceleration",
-    "Summary": "Reimplementing ML models with custom GPU kernals to benchmark training and inference speedups.",
+    "Summary": "Speeding up machine learning trading models with custom GPU kernels in CUDA C++ for high frequency trading models. Running the models on Purdue's GPU cluster and benchmarking them with the standard PyTorch implementations to measure performance gain. ",
     "Contributors": "Prajwal Shah, Shashank Mukkera",
     "Index": 23,
-    "Tags": ["C++", "Quant Dev"],
+    "Tags": ["CUDA", "Parallel Programming", "GPU Profiling"],
     "Link": "",
     "Semester": "Spring 2026"
   },
   {
     "Title": "Finmath Binding Library",
-    "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality.",
+    "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality. By using techniques like SIMD, the project has seen up to 300x faster operations than NumPy on linear regression models, including 34x faster operations on large datasets (> 500k datapoints).",
     "Contributors": "Nishaant Shah",
     "Index": 24,
-    "Tags": ["Python", "C++", "Quant Dev"],
+    "Tags": ["Performance Optimization", "C++", "Pip Packages", "Python"],
     "Link": "https://github.com/Boiler-Quant/options-simulator",
     "Semester": "Spring 2026"
   },
   {
     "Title": "FPGA Pricing",
-    "Summary": "Implementing trading models and high frequency strategies at the hardware level by using FPGAs gifted by Belvedere.",
+    "Summary": " Implementing a holistic options pricing pipeline (market data, pricing model, parallel hardware calculations, pipeline registers, and ethernet UDP modules) by using FPGAs gifted by Belvedere. Saw 50x improvement on latency per option over microcontroller units when implementing the Black Scholes pricing model.",
     "Contributors": "Riya Chamala",
     "Index": 25,
-    "Tags": ["Quant Trading", "Python"],
+    "Tags": ["Verilog", "Register Transfer Level", "FPGAs", "Low Latency"],
     "Link": "",
     "Semester": "Spring 2026"
   },
   {
-    "Title": "Market Mechanics",
-    "Summary": "Simulating the market order book by modeling state-dependent limit events, in order to evaluate market making strategies under realistic order flow.",
+    "Title": "LOB Modeling",
+    "Summary": "Simulating an event driven Limit Order Book to study market making dynamics. The project models stochastic order flow and queue dynamics to provide a controlled environment for testing inventory-aware market making strategies under varying liquidity and volatility regimes.",
     "Contributors": "Nathan Li, Segyul Park",
     "Index": 26,
-    "Tags": ["C++", "Quant Dev"],
+    "Tags": ["Stochastic Processes", "Market Microstructures", "Queueing Theory"],
     "Link": "https://github.com/Boiler-Quant/gpu-backtester",
     "Semester": "Spring 2026"
   },
   {
     "Title": "StockGuessr",
-    "Summary": "Application for paper trading game that feeds players selected information.",
+    "Summary": "Building a competitive platform where users predict market movements using information from anonymized charts and historical news. The backend will handle real-time state synchronization for concurrent users. ",
     "Contributors": "Aarav Mohanty, Pradyum Chitlu",
     "Index": 27,
-    "Tags": ["Python", "Quant Trading"],
+    "Tags": ["Real-time Networking", "App Development", "Technical Analysis"],
     "Link": "",
     "Semester": "Spring 2026"
   },
   {
-    "Title": "FPGA Options Engine",
-    "Summary": "Applying AI modeles and RAG agents to conduct research on financial products.",
+    "Title": "Agentic Quant Researcher",
+    "Summary": "Replicating the quant researcher and technical analysis roles with RAG agents. These will research companies in different sectors to provide critical information in developing trading strategies. Agents will have an edge based solely on the large data quantities they can ingest.",
     "Contributors": "Ayush Agarwal",
     "Index": 28,
-    "Tags": ["Machine Learning", "Quant Dev"],
+    "Tags": ["LLMs", "VectorDB", "RAG Agents", "Python"],
     "Link": "",
     "Semester": "Spring 2026"
   }

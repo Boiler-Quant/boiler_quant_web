@@ -228,7 +228,7 @@
     "Semester": "Spring 2026"
   },
   {
-    "Title": "StockGuessr",
+    "Title": "Live Trading Simulator",
     "Summary": "Building a competitive platform where users predict market movements using information from anonymized charts and historical news. The backend will handle real-time state synchronization for concurrent users. ",
     "Contributors": "Aarav Mohanty, Pradyum Chitlu",
     "Index": 27,

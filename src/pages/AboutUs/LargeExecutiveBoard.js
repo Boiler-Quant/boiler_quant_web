@@ -11,42 +11,51 @@ const LargeExecutiveBoard = ({ data }) => {
         const elements = document.querySelectorAll(`.${group}`);
         let maxHeight = 0;
 
-        // Reset height to auto to recalculate
         elements.forEach((el) => (el.style.height = "auto"));
 
-        // Find the tallest element
         elements.forEach((el) => {
           const height = el.offsetHeight;
           if (height > maxHeight) maxHeight = height;
         });
 
-        // Set all elements to the tallest height
         elements.forEach((el) => (el.style.height = `${maxHeight}px`));
       });
     };
 
-    // Sync heights on load and resize
     syncSectionHeights();
     window.addEventListener("resize", syncSectionHeights);
-
     return () => window.removeEventListener("resize", syncSectionHeights);
   }, []);
+
   const theme = useTheme();
 
   return (
     <div className={`section-container-sm bg-gray-200 ${theme.text_black}`}>
       <h2 className="section-title font-catchy">2025 Executive Board</h2>
+
+      {/* Row 1 — 2 people */}
       <div className="flex flex-row justify-center gap-responsive py-3">
         {data.slice(0, 2).map((exec, index) => (
           <div key={index} className="flex flex-col w-64 xl:w-72">
-            <ExecutiveCard exec={exec} index={index} />
+            <ExecutiveCard exec={exec} />
           </div>
         ))}
       </div>
+
+      {/* Row 2 — 3 people */}
       <div className="flex flex-row justify-center gap-responsive py-3">
         {data.slice(2, 5).map((exec, index) => (
           <div key={index} className="flex flex-col w-64 xl:w-72">
-            <ExecutiveCard exec={exec} index={index} />
+            <ExecutiveCard exec={exec} />
+          </div>
+        ))}
+      </div>
+
+      {/* Row 3 — 2 people */}
+      <div className="flex flex-row justify-center gap-responsive py-3">
+        {data.slice(5, 7).map((exec, index) => (
+          <div key={index} className="flex flex-col w-64 xl:w-72">
+            <ExecutiveCard exec={exec} />
           </div>
         ))}
       </div>

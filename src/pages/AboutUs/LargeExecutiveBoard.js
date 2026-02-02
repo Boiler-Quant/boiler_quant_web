@@ -31,7 +31,7 @@ const LargeExecutiveBoard = ({ data }) => {
 
   return (
     <div className={`section-container-sm bg-gray-200 ${theme.text_black}`}>
-      <h2 className="section-title font-catchy">2025 Executive Board</h2>
+      <h2 className="section-title font-catchy">2026 Executive Board</h2>
 
       {/* Row 1 — 2 people */}
       <div className="flex flex-row justify-center gap-responsive py-3">

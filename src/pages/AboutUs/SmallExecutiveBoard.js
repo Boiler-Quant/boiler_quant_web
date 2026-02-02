@@ -35,7 +35,7 @@ const SmallExecutiveBoard = ({ data }) => {
 
   return (
     <div className={`section-container-sm bg-gray-200 ${theme.text_black}`}>
-      <h2 className="section-title font-catchy">2025 Executive Board</h2>
+      <h2 className="section-title font-catchy">2026 Executive Board</h2>
       <div className="grid grid-cols-2 gap-responsive py-3 px-2 justify-items-center">
         {data.map((exec, index) => (
           <div

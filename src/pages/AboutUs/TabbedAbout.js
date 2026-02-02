@@ -47,7 +47,7 @@ const TabbedAbout = () => {
                   : "text-gray-600 hover:text-gray-800 hover:bg-gray-200"
               }`}
             >
-              Overview
+              Who we are
             </button>
             <button
               onClick={() => setActiveTab("past-semesters")}

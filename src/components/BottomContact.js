@@ -9,7 +9,7 @@ const BottomContact = () => {
       {/* Left Section: Logo and Name */}
       <div className="footer-logo-section">
         <img
-          src="/submark_black.svg"
+          src="/submark_black.png"
           alt="Quant Club Logo"
           className="footer-logo"
         />

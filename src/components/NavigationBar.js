@@ -39,7 +39,7 @@ const NavigationBar = () => {
       <div className="flex">
         <Link to="/">
           <img
-            src="/submark_white.svg"
+            src="/submark_white.png"
             alt="Quant Club Logo"
             className="nav-logo"
           />

@@ -29,7 +29,7 @@ const TabbedAbout = () => {
         {/* Image */}
         <img
           className="w-1/5 xl:w-1/6"
-          src="submark_white.svg"
+          src="submark_white.png"
           alt="boiler quant logo"
         />
         {/* Caption */}

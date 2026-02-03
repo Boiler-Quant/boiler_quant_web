@@ -10,6 +10,9 @@ import { useTheme } from "../../theme-context";
 
 const ProjectCard = ({ project }) => {
   const [expanded, setExpanded] = useState(false);
+  const teamLeadRaw = project["Team Lead"] || project["Team Leads"] || "";
+  const teamLead = typeof teamLeadRaw === "string" ? teamLeadRaw.trim() : "";
+  const teamLeadLabel = teamLead.includes(",") ? "Team Leads" : "Team Lead";
 
   const theme = useTheme();
 
@@ -56,6 +59,11 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
           <p className="text-body-md font-catchy py-2">{project["Summary"]}</p>
+          {teamLead && (
+            <p className="text-body-sm py-1 lg:text-body-md font-catchy">
+              {teamLeadLabel}: {teamLead}
+            </p>
+          )}
           <p className="text-body-sm py-1 lg:text-body-md font-catchy">
             Contributors: {project["Contributors"]}
           </p>

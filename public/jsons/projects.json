@@ -195,7 +195,8 @@
   {
     "Title": "Finmath Binding Library",
     "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality. By using techniques like SIMD, the project has seen up to 300x faster operations than NumPy on linear regression models, including 34x faster operations on large datasets (> 500k datapoints).",
-    "Contributors": "Prajwal Shah, Shashank Mukkera",
+    "Team Lead": "Prajwal Shah, Shashank Mukkera",
+    "Contributors": "",
     "Index": 24,
     "Tags": ["Performance Optimization", "C++", "Pip Packages", "Python"],
     "Link": "https://github.com/Boiler-Quant/options-simulator",
@@ -204,7 +205,8 @@
   {
     "Title": "FPGA Pricing",
     "Summary": "Implementing a parallel Monte Carlo risk simulation engine (pseudo-random number generation, fixed-point path updates, parallel simulation lanes, and hardware accumulation logic) using FPGAs. Previously saw 50x improvement on latency per option over microcontroller units when implementing the Black Scholes pricing model.",
-    "Contributors": "Riya Chamala",
+    "Team Lead": "Riya Chamala",
+    "Contributors": "",
     "Index": 25,
     "Tags": ["Verilog", "Register Transfer Level", "FPGAs", "Low Latency"],
     "Link": "",
@@ -213,25 +215,48 @@
   {
     "Title": "LOB Modeling",
     "Summary": "Simulating an event driven Limit Order Book to study market making dynamics. The project models stochastic order flow and queue dynamics to provide a controlled environment for testing inventory-aware market making strategies under varying liquidity and volatility regimes.",
-    "Contributors": "Nathan Li, Segyul Park",
+    "Team Lead": "Nathan Li, Segyul Park",
+    "Contributors": "",
     "Index": 26,
     "Tags": ["Stochastic Processes", "Market Microstructures", "Queueing Theory"],
     "Link": "",
     "Semester": "Spring 2026"
   },
   {
+    "Title": "GTO Poker Solver",
+    "Summary": "Description coming soon.",
+    "Team Lead": "Yohaan Chokhany",
+    "Contributors": "",
+    "Index": 28,
+    "Tags": [],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
     "Title": "GPU Acceleration",
     "Summary": "Speeding up machine learning trading models with custom GPU kernels in CUDA C++ for high frequency trading models. Running the models on Purdue's GPU cluster and benchmarking them with the standard PyTorch implementations to measure performance gain. ",
-    "Contributors": "Aadi Jain",
+    "Team Lead": "Aadi Jain",
+    "Contributors": "",
     "Index": 23,
     "Tags": ["CUDA", "Parallel Programming", "GPU Profiling"],
     "Link": "",
     "Semester": "Spring 2026"
   },
   {
+    "Title": "Prediction Markets Microstructure",
+    "Summary": "Description coming soon.",
+    "Team Lead": "Trinidad Segovia",
+    "Contributors": "",
+    "Index": 28,
+    "Tags": [],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
     "Title": "Live Trading Simulator",
     "Summary": "Building a competitive platform where users predict market movements using information from anonymized charts and historical news. The backend will handle real-time state synchronization for concurrent users. ",
-    "Contributors": "Aarav Mohanty, Pradyum Chitlu",
+    "Team Lead": "Aarav Mohanty, Pradyum Chitlu",
+    "Contributors": "",
     "Index": 27,
     "Tags": ["Real-time Networking", "App Development", "Technical Analysis"],
     "Link": "",
@@ -240,7 +265,8 @@
   {
     "Title": "Agentic Quant Researcher",
     "Summary": "Replicating the quant researcher and technical analysis roles with RAG agents. These will research companies in different sectors to provide critical information in developing trading strategies. Agents will have an edge based solely on the large data quantities they can ingest.",
-    "Contributors": "Ayush Agarwal",
+    "Team Lead": "Ayush Agarwal",
+    "Contributors": "",
     "Index": 28,
     "Tags": ["LLMs", "VectorDB", "RAG Agents", "Python"],
     "Link": "",

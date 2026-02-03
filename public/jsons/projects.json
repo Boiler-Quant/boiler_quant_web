@@ -224,11 +224,11 @@
   },
   {
     "Title": "GTO Poker Solver",
-    "Summary": "Description coming soon.",
+    "Summary": "Developing a high-performance Game Theory Optimal (GTO) solver for poker variants using Counterfactual Regret Minimization (CFR). Building an engine to simulate millions of iterations of gameplay to minimize \"regret,\" converging on an unexploitable Nash Equilibrium strategy. Optimizing the computational efficiency of the solver and visualizing how the bot learns to balance its range and bluff frequencies in an environment of imperfect information.",
     "Team Lead": "Yohaan Chokhany",
     "Contributors": "",
     "Index": 28,
-    "Tags": [],
+    "Tags": ["Poker Solver", "Game Theory", "Stochastic Simulation"],
     "Link": "",
     "Semester": "Spring 2026"
   },
@@ -244,11 +244,11 @@
   },
   {
     "Title": "Prediction Markets Microstructure",
-    "Summary": "Description coming soon.",
+    "Summary": "Studying liquidity dynamics and behavioral biases in prediction markets through order book microstructure analysis. Testing whether order flow exhibits inertia during sports events, where emotional betting creates liquidity regime shifts. The team will develop and backtest different liquidity models to identify exploitable inefficiencies in under-researched markets.",
     "Team Lead": "Trinidad Segovia",
     "Contributors": "",
     "Index": 28,
-    "Tags": [],
+    "Tags": ["Prediction Markets", "Market Microstructures", "Time Series Modeling"],
     "Link": "",
     "Semester": "Spring 2026"
   },

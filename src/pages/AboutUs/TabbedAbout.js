@@ -5,6 +5,9 @@ import LargeExecutiveBoard from "./LargeExecutiveBoard";
 import SmallExecutiveBoard from "./SmallExecutiveBoard";
 import { CircularProgress } from "@mui/material";
 
+// Keep this false to hide the tab without removing legacy content/code.
+const SHOW_PAST_SEMESTERS_TAB = false;
+
 const TabbedAbout = () => {
   const theme = useTheme();
   const [activeTab, setActiveTab] = useState("overview");
@@ -59,16 +62,18 @@ const TabbedAbout = () => {
             >
               Where We Are
             </button>
-            <button
-              onClick={() => setActiveTab("past-semesters")}
-              className={`flex-1 py-3 xl:py-4 px-4 xl:px-6 text-center font-frank font-semibold text-sm xl:text-base transition-all duration-200 ${
-                activeTab === "past-semesters"
-                  ? `${theme.background} ${theme.text_white}`
-                  : "text-gray-600 hover:text-gray-800 hover:bg-gray-200"
-              }`}
-            >
-              Past Semesters
-            </button>
+            {SHOW_PAST_SEMESTERS_TAB && (
+              <button
+                onClick={() => setActiveTab("past-semesters")}
+                className={`flex-1 py-3 xl:py-4 px-4 xl:px-6 text-center font-frank font-semibold text-sm xl:text-base transition-all duration-200 ${
+                  activeTab === "past-semesters"
+                    ? `${theme.background} ${theme.text_white}`
+                    : "text-gray-600 hover:text-gray-800 hover:bg-gray-200"
+                }`}
+              >
+                Past Semesters
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -77,7 +82,9 @@ const TabbedAbout = () => {
       <div className="min-h-screen">
         {activeTab === "overview" && <OverviewTab data={data} />}
         {activeTab === "where-we-are" && <WhereWeAreTab />}
-        {activeTab === "past-semesters" && <PastSemestersTab />}
+        {SHOW_PAST_SEMESTERS_TAB && activeTab === "past-semesters" && (
+          <PastSemestersTab />
+        )}
       </div>
     </div>
   );

@@ -58,13 +58,13 @@ const ProjectCard = ({ project }) => {
               </span>
             ))}
           </div>
-          <p className="text-body-md font-catchy py-2">{project["Summary"]}</p>
+          <p className="text-body-md font-serif py-2">{project["Summary"]}</p>
           {teamLead && (
-            <p className="text-body-sm py-1 lg:text-body-md font-catchy">
+            <p className="text-body-sm py-1 lg:text-body-md font-serif">
               {teamLeadLabel}: {teamLead}
             </p>
           )}
-          <p className="text-body-sm py-1 lg:text-body-md font-catchy">
+          <p className="text-body-sm py-1 lg:text-body-md font-serif">
             Contributors: {project["Contributors"]}
           </p>
           <IconButton

@@ -48,10 +48,10 @@ const Main = () => {
           </h2>
 
           <p className="text-body-lg lg:mb-3 font-semibold">
-            Spring 2026 Applications Are Now Open!
+            Spring 2026 Applications Are Now Closed
           </p>
           <p className="text-body-md mb-section-sm">
-            We look forward to reviewing your applications. 
+            Follow our socials to stay up to date on future recruitment and events!
           </p>
           {/* <Link
             to="/join-us"

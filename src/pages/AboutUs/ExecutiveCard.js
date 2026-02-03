@@ -11,7 +11,7 @@ const ExecutiveCard = ({ exec, index, compact = false }) => {
           className={`font-bold font-catchy mb-1 ${
             compact
               ? "text-body-lg xl:text-body-xl leading-tight min-h-[5rem]"
-              : "text-heading-sm"
+              : "text-heading-md leading-tight"
           }`}
         >
           {exec["Full Name"]}

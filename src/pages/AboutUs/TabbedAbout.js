@@ -47,7 +47,17 @@ const TabbedAbout = () => {
                   : "text-gray-600 hover:text-gray-800 hover:bg-gray-200"
               }`}
             >
-              Who we are
+              Who We Are
+            </button>
+            <button
+              onClick={() => setActiveTab("where-we-are")}
+              className={`flex-1 py-3 xl:py-4 px-4 xl:px-6 text-center font-frank font-semibold text-sm xl:text-base transition-all duration-200 ${
+                activeTab === "where-we-are"
+                  ? `${theme.background} ${theme.text_white}`
+                  : "text-gray-600 hover:text-gray-800 hover:bg-gray-200"
+              }`}
+            >
+              Where We Are
             </button>
             <button
               onClick={() => setActiveTab("past-semesters")}
@@ -66,6 +76,7 @@ const TabbedAbout = () => {
       {/* Tab Content */}
       <div className="min-h-screen">
         {activeTab === "overview" && <OverviewTab data={data} />}
+        {activeTab === "where-we-are" && <WhereWeAreTab />}
         {activeTab === "past-semesters" && <PastSemestersTab />}
       </div>
     </div>
@@ -186,6 +197,21 @@ const PastSemestersTab = () => {
         </div>
       </div>
     </>
+  );
+};
+
+const WhereWeAreTab = () => {
+  return (
+    <div className="w-full bg-white py-12 xl:py-16">
+      <div className="max-w-5xl xl:max-w-4xl mx-auto text-center px-8 xl:px-12">
+        <h2 className="text-heading-sm xl:text-heading-md font-bold font-frank mb-section-sm">
+          Where We Are
+        </h2>
+        <p className="text-body-sm xl:text-body-md font-serif text-gray-600">
+          Company placement logos coming soon.
+        </p>
+      </div>
+    </div>
   );
 };
 

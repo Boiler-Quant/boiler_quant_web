@@ -8,14 +8,14 @@ const JoinUs = () => {
       className={`section-container ${theme.background} ${theme.text_white} flex flex-col items-center space-y-responsive mt-10`}
     >
       <h3 className="text-heading-md font-semibold font-frank text-center">
-        Spring 2026 Applications Are Now Open! 
+        Spring 2026 Applications Are Closed 
     
       </h3>
 
       {/* Application Options */}
       <div className="text-center mb-section-sm">
         <p className="text-body-md font-frank mb-6">
-          They both lead to the same application form.
+          {/* They both lead to the same application form. */}
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-responsive-lg">

@@ -208,15 +208,69 @@ const PastSemestersTab = () => {
 };
 
 const WhereWeAreTab = () => {
+  const [logos, setLogos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/jsons/where_we_are_logos.json")
+      .then((res) => res.json())
+      .then((data) => setLogos(Array.isArray(data) ? data : []))
+      .catch(() => setLogos([]))
+      .finally(() => setIsLoading(false));
+  }, []);
+
   return (
-    <div className="w-full bg-white py-12 xl:py-16">
-      <div className="max-w-5xl xl:max-w-4xl mx-auto text-center px-8 xl:px-12">
-        <h2 className="text-heading-sm xl:text-heading-md font-bold font-frank mb-section-sm">
+    <div className="w-full bg-[#201e1f] py-12 xl:py-16">
+      <div className="max-w-6xl xl:max-w-5xl mx-auto px-8 xl:px-12">
+        <h2 className="text-heading-sm xl:text-heading-md font-bold font-frank mb-2 text-white text-center">
           Where We Are
         </h2>
-        <p className="text-body-sm xl:text-body-md font-serif text-gray-600">
-          Company placement logos coming soon.
+        <p className="text-body-sm xl:text-body-md font-serif text-gray-300 text-center mb-8">
+          Company placements from Boiler Quant members.
         </p>
+
+        {isLoading ? (
+          <p className="text-body-sm xl:text-body-md font-serif text-gray-300 text-center">
+            Loading placements...
+          </p>
+        ) : logos.length === 0 ? (
+          <p className="text-body-sm xl:text-body-md font-serif text-gray-300 text-center">
+            No logos yet. Add image files to `public/where_we_are_logos/` and
+            entries to `public/jsons/where_we_are_logos.json`.
+          </p>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+            {logos.map((logo, index) => {
+              const card = (
+                <div className="bg-white/95 rounded-lg h-24 md:h-28 px-2 md:px-3 py-2 flex items-center justify-center">
+                  <img
+                    src={logo.image}
+                    alt={logo.name || "Company logo"}
+                    className="max-h-20 md:max-h-24 max-w-[92%] object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              );
+
+              return (
+                <div key={logo.name || logo.image || index}>
+                  {logo.website ? (
+                    <a
+                      href={logo.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block focus:outline-none focus:ring-2 focus:ring-[#ebd99f] rounded-lg"
+                    >
+                      {card}
+                    </a>
+                  ) : (
+                    card
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -42,20 +42,11 @@ const LargeExecutiveBoard = ({ data }) => {
         ))}
       </div>
 
-      {/* Row 2 — 3 people */}
-      <div className="flex flex-row justify-center gap-responsive py-3">
-        {data.slice(2, 5).map((exec, index) => (
-          <div key={index} className="flex flex-col w-64 xl:w-72">
-            <ExecutiveCard exec={exec} />
-          </div>
-        ))}
-      </div>
-
-      {/* Row 3 — 2 people */}
-      <div className="flex flex-row justify-center gap-responsive py-3">
-        {data.slice(5, 7).map((exec, index) => (
-          <div key={index} className="flex flex-col w-64 xl:w-72">
-            <ExecutiveCard exec={exec} />
+      {/* Row 2 — remaining 5 people in a single compact row */}
+      <div className="flex flex-row flex-nowrap justify-center gap-3 xl:gap-4 py-3">
+        {data.slice(2, 7).map((exec, index) => (
+          <div key={index} className="flex flex-col w-40 lg:w-44 xl:w-48">
+            <ExecutiveCard exec={exec} compact />
           </div>
         ))}
       </div>

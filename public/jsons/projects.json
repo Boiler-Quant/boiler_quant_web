@@ -191,6 +191,7 @@
   },
 
 
+
   {
     "Title": "Finmath Binding Library",
     "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality. By using techniques like SIMD, the project has seen up to 300x faster operations than NumPy on linear regression models, including 34x faster operations on large datasets (> 500k datapoints).",
@@ -202,7 +203,7 @@
   },
   {
     "Title": "FPGA Pricing",
-    "Summary": " Implementing a holistic options pricing pipeline (market data, pricing model, parallel hardware calculations, pipeline registers, and ethernet UDP modules) by using FPGAs gifted by Belvedere. Saw 50x improvement on latency per option over microcontroller units when implementing the Black Scholes pricing model.",
+    "Summary": "Implementing a parallel Monte Carlo risk simulation engine (pseudo-random number generation, fixed-point path updates, parallel simulation lanes, and hardware accumulation logic) using FPGAs. Previously saw 50x improvement on latency per option over microcontroller units when implementing the Black Scholes pricing model.",
     "Contributors": "Riya Chamala",
     "Index": 25,
     "Tags": ["Verilog", "Register Transfer Level", "FPGAs", "Low Latency"],
@@ -215,7 +216,7 @@
     "Contributors": "Nathan Li, Segyul Park",
     "Index": 26,
     "Tags": ["Stochastic Processes", "Market Microstructures", "Queueing Theory"],
-    "Link": "https://github.com/Boiler-Quant/gpu-backtester",
+    "Link": "",
     "Semester": "Spring 2026"
   },
   {

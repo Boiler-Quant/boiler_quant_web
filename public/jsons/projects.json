@@ -213,7 +213,7 @@
     "Semester": "Spring 2026"
   },
   {
-    "Title": "LOB Modeling",
+    "Title": "Order Book Modeling",
     "Summary": "Simulating an event driven Limit Order Book to study market making dynamics. The project models stochastic order flow and queue dynamics to provide a controlled environment for testing inventory-aware market making strategies under varying liquidity and volatility regimes.",
     "Team Lead": "Nathan Li, Segyul Park",
     "Contributors": "",

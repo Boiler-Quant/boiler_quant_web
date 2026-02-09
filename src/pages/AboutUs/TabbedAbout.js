@@ -226,7 +226,7 @@ const WhereWeAreTab = () => {
           Where We Are
         </h2>
         <p className="text-body-sm xl:text-body-md font-serif text-gray-300 text-center mb-8">
-          Company placements from Boiler Quant members.
+          Where Boiler Quant members have received offers.
         </p>
 
         {isLoading ? (

@@ -235,7 +235,7 @@
   {
     "Title": "GPU Acceleration",
     "Summary": "Speeding up machine learning trading models with custom GPU kernels in CUDA C++ for high frequency trading models. Running the models on Purdue's GPU cluster and benchmarking them with the standard PyTorch implementations to measure performance gain. ",
-    "Team Lead": "Aadi Jain", "Rahul Siddarth"
+    "Team Lead": "Aadi Jain, Rahul Siddarth",
     "Contributors": "",
     "Index": 23,
     "Tags": ["CUDA", "Parallel Programming", "GPU Profiling"],

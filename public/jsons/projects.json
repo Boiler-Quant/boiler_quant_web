@@ -1,4 +1,89 @@
 ﻿[
+    {
+    "Title": "Finmath Binding Library",
+    "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality. By using techniques like SIMD, the project has seen up to 300x faster operations than NumPy on linear regression models, including 34x faster operations on large datasets (> 500k datapoints).",
+    "Team Lead": "Prajwal Shah, Shashank Mukkera",
+    "Contributors": "Lalit Boyapati, Philip Wisniewski, Ray Han, William Zhang",
+    "Index": 24,
+    "Tags": ["Performance Optimization", "C++", "Pip Packages", "Python"],
+    "Link": "https://github.com/Boiler-Quant/options-simulator",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "FPGA Pricing",
+    "Summary": "Implementing a parallel Monte Carlo risk simulation engine (pseudo-random number generation, fixed-point path updates, parallel simulation lanes, and hardware accumulation logic) using FPGAs. Previously saw 50x improvement on latency per option over microcontroller units when implementing the Black Scholes pricing model.",
+    "Team Lead": "Riya Chamala",
+    "Contributors": "Aiden Drepaniotis, Pragathi Arunkumar, Chenxi Zhang, Justin Chen, Gavin Payne",
+    "Index": 25,
+    "Tags": ["Verilog", "Register Transfer Level", "FPGAs", "Low Latency"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "Order Book Modeling",
+    "Summary": "Simulating an event driven Limit Order Book to study market making dynamics. The project models stochastic order flow and queue dynamics to provide a controlled environment for testing inventory-aware market making strategies under varying liquidity and volatility regimes.",
+    "Team Lead": "Nathan Li, Segyul Park",
+    "Contributors": "Rohit Manjunath, Neel Chawla, Ryan Challman",
+    "Index": 26,
+    "Tags": ["Stochastic Processes", "Market Microstructures", "Queueing Theory"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "GTO Poker Solver",
+    "Summary": "Developing a high-performance Game Theory Optimal (GTO) solver for poker variants using Counterfactual Regret Minimization (CFR). Building an engine to simulate millions of iterations of gameplay to minimize \"regret,\" converging on an unexploitable Nash Equilibrium strategy. Optimizing the computational efficiency of the solver and visualizing how the bot learns to balance its range and bluff frequencies in an environment of imperfect information.",
+    "Team Lead": "Yohaan Chokhany",
+    "Contributors": "Sayam Goyal, Sandilya Kambhampati, Pritam Hazra, Kashyap Maddala",
+    "Index": 28,
+    "Tags": ["Poker Solver", "Game Theory", "Stochastic Simulation"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "GPU Acceleration",
+    "Summary": "Speeding up machine learning trading models with custom GPU kernels in CUDA C++ for high frequency trading models. Running the models on Purdue's GPU cluster and benchmarking them with the standard PyTorch implementations to measure performance gain. ",
+    "Team Lead": "Aadi Jain",
+    "Contributors": "Pranith Ravella, Nathan Witt, Hargun Singh, Alexander Chen",
+    "Index": 23,
+    "Tags": ["CUDA", "Parallel Programming", "GPU Profiling"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "Prediction Markets Microstructure",
+    "Summary": "Studying liquidity dynamics and behavioral biases in prediction markets through order book microstructure analysis. Testing whether order flow exhibits inertia during sports events, where emotional betting creates liquidity regime shifts. The team will develop and backtest different liquidity models to identify exploitable inefficiencies in under-researched markets.",
+    "Team Lead": "Trinidad Segovia",
+    "Contributors": "Ethan Lee, David Oprea, Mitchell Patout, Ruhaan Bhargav, Kevin Karram",
+    "Index": 28,
+    "Tags": ["Prediction Markets", "Market Microstructures", "Time Series Modeling"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "Live Trading Simulator",
+    "Summary": "Building a competitive platform where users predict market movements using information from anonymized charts and historical news. The backend will handle real-time state synchronization for concurrent users. ",
+    "Team Lead": "Aarav Mohanty, Pradyum Chitlu",
+    "Contributors": "Uday Manneru, Shivani Sinha, Arya Bharath",
+    "Index": 27,
+    "Tags": ["Real-time Networking", "App Development", "Technical Analysis"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+  {
+    "Title": "Agentic Quant Researcher",
+    "Summary": "Replicating the quant researcher and technical analysis roles with RAG agents. These will research companies in different sectors to provide critical information in developing trading strategies. Agents will have an edge based solely on the large data quantities they can ingest.",
+    "Team Lead": "Ayush Agarwal",
+    "Contributors": "Dhruv Jhamb, Hamza Adwan, Aarush Agarwal, Taymur Faruqui",
+    "Index": 28,
+    "Tags": ["LLMs", "VectorDB", "RAG Agents", "Python"],
+    "Link": "",
+    "Semester": "Spring 2026"
+  },
+
+
+
+
+
   {
     "Title": "Finmath Library",
     "Summary": "This team developed finmath, a financial math calculation library that offers the functionality of a traditional Python library while leveraging C/C++ for enhanced speed and efficiency.",
@@ -188,88 +273,5 @@
     "Index": 22,
     "Tags": ["Hardware", "Quant Dev"],
     "Semester": "Fall 2025"
-  },
-
-
-
-  {
-    "Title": "Finmath Binding Library",
-    "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality. By using techniques like SIMD, the project has seen up to 300x faster operations than NumPy on linear regression models, including 34x faster operations on large datasets (> 500k datapoints).",
-    "Team Lead": "Prajwal Shah, Shashank Mukkera",
-    "Contributors": "",
-    "Index": 24,
-    "Tags": ["Performance Optimization", "C++", "Pip Packages", "Python"],
-    "Link": "https://github.com/Boiler-Quant/options-simulator",
-    "Semester": "Spring 2026"
-  },
-  {
-    "Title": "FPGA Pricing",
-    "Summary": "Implementing a parallel Monte Carlo risk simulation engine (pseudo-random number generation, fixed-point path updates, parallel simulation lanes, and hardware accumulation logic) using FPGAs. Previously saw 50x improvement on latency per option over microcontroller units when implementing the Black Scholes pricing model.",
-    "Team Lead": "Riya Chamala",
-    "Contributors": "",
-    "Index": 25,
-    "Tags": ["Verilog", "Register Transfer Level", "FPGAs", "Low Latency"],
-    "Link": "",
-    "Semester": "Spring 2026"
-  },
-  {
-    "Title": "Order Book Modeling",
-    "Summary": "Simulating an event driven Limit Order Book to study market making dynamics. The project models stochastic order flow and queue dynamics to provide a controlled environment for testing inventory-aware market making strategies under varying liquidity and volatility regimes.",
-    "Team Lead": "Nathan Li, Segyul Park",
-    "Contributors": "",
-    "Index": 26,
-    "Tags": ["Stochastic Processes", "Market Microstructures", "Queueing Theory"],
-    "Link": "",
-    "Semester": "Spring 2026"
-  },
-  {
-    "Title": "GTO Poker Solver",
-    "Summary": "Developing a high-performance Game Theory Optimal (GTO) solver for poker variants using Counterfactual Regret Minimization (CFR). Building an engine to simulate millions of iterations of gameplay to minimize \"regret,\" converging on an unexploitable Nash Equilibrium strategy. Optimizing the computational efficiency of the solver and visualizing how the bot learns to balance its range and bluff frequencies in an environment of imperfect information.",
-    "Team Lead": "Yohaan Chokhany",
-    "Contributors": "",
-    "Index": 28,
-    "Tags": ["Poker Solver", "Game Theory", "Stochastic Simulation"],
-    "Link": "",
-    "Semester": "Spring 2026"
-  },
-  {
-    "Title": "GPU Acceleration",
-    "Summary": "Speeding up machine learning trading models with custom GPU kernels in CUDA C++ for high frequency trading models. Running the models on Purdue's GPU cluster and benchmarking them with the standard PyTorch implementations to measure performance gain. ",
-    "Team Lead": "Aadi Jain",
-    "Contributors": "",
-    "Index": 23,
-    "Tags": ["CUDA", "Parallel Programming", "GPU Profiling"],
-    "Link": "",
-    "Semester": "Spring 2026"
-  },
-  {
-    "Title": "Prediction Markets Microstructure",
-    "Summary": "Studying liquidity dynamics and behavioral biases in prediction markets through order book microstructure analysis. Testing whether order flow exhibits inertia during sports events, where emotional betting creates liquidity regime shifts. The team will develop and backtest different liquidity models to identify exploitable inefficiencies in under-researched markets.",
-    "Team Lead": "Trinidad Segovia",
-    "Contributors": "",
-    "Index": 28,
-    "Tags": ["Prediction Markets", "Market Microstructures", "Time Series Modeling"],
-    "Link": "",
-    "Semester": "Spring 2026"
-  },
-  {
-    "Title": "Live Trading Simulator",
-    "Summary": "Building a competitive platform where users predict market movements using information from anonymized charts and historical news. The backend will handle real-time state synchronization for concurrent users. ",
-    "Team Lead": "Aarav Mohanty, Pradyum Chitlu",
-    "Contributors": "",
-    "Index": 27,
-    "Tags": ["Real-time Networking", "App Development", "Technical Analysis"],
-    "Link": "",
-    "Semester": "Spring 2026"
-  },
-  {
-    "Title": "Agentic Quant Researcher",
-    "Summary": "Replicating the quant researcher and technical analysis roles with RAG agents. These will research companies in different sectors to provide critical information in developing trading strategies. Agents will have an edge based solely on the large data quantities they can ingest.",
-    "Team Lead": "Ayush Agarwal",
-    "Contributors": "",
-    "Index": 28,
-    "Tags": ["LLMs", "VectorDB", "RAG Agents", "Python"],
-    "Link": "",
-    "Semester": "Spring 2026"
   }
 ]

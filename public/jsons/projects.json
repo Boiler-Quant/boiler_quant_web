@@ -32,7 +32,7 @@
   {
     "Title": "GTO Poker Solver",
     "Summary": "Developing a high-performance Game Theory Optimal (GTO) solver for poker variants using Counterfactual Regret Minimization (CFR). Building an engine to simulate millions of iterations of gameplay to minimize \"regret,\" converging on an unexploitable Nash Equilibrium strategy. Optimizing the computational efficiency of the solver and visualizing how the bot learns to balance its range and bluff frequencies in an environment of imperfect information.",
-    "Team Lead": "Yohaan Chokhany",
+    "Team Lead": "Yohaan Chokhany, Aiden Huang",
     "Contributors": "Sayam Goyal, Sandilya Kambhampati, Pritam Hazra, Kashyap Maddala",
     "Index": 28,
     "Tags": ["Poker Solver", "Game Theory", "Stochastic Simulation"],

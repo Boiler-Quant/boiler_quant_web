@@ -3,7 +3,7 @@
     "Title": "Finmath Binding Library",
     "Summary": "C/C++ library for fast financial math operations. Bound to Python with a pip package and expanded functionality. By using techniques like SIMD, the project has seen up to 300x faster operations than NumPy on linear regression models, including 34x faster operations on large datasets (> 500k datapoints).",
     "Team Lead": "Prajwal Shah, Shashank Mukkera",
-    "Contributors": "Lalit Boyapati, Philip Wisniewski, Ray Han, William Zhang",
+    "Contributors": "Aviral Rastogi, Lalit Boyapati, Philip Wisniewski, Ray Han, William Zhang",
     "Index": 24,
     "Tags": ["Performance Optimization", "C++", "Pip Packages", "Python"],
     "Link": "https://github.com/Boiler-Quant/options-simulator",

@@ -63,7 +63,7 @@
     "Title": "Live Trading Simulator",
     "Summary": "Building a competitive platform where users predict market movements using information from anonymized charts and historical news. The backend will handle real-time state synchronization for concurrent users. ",
     "Team Lead": "Aarav Mohanty, Pradyum Chitlu",
-    "Contributors": "Uday Manneru, Shivani Sinha, Arya Bharath",
+    "Contributors": "Uday Manneru, Shivani Sinha, Navneeth Krishna, Arya Bharath",
     "Index": 27,
     "Tags": ["Real-time Networking", "App Development", "Technical Analysis"],
     "Link": "",

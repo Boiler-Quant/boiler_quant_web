@@ -25,6 +25,11 @@
         "website": "https://oldmissioncapital.com"
     },
     {
+        "name": "Peak6",
+        "image": "/where_we_are_logos/peak6.png",
+        "website": "https://peak6.com"
+    },
+    {
         "name": "Jump Trading",
         "image": "/where_we_are_logos/jump.png",
         "website": "https://www.jumptrading.com"
@@ -33,11 +38,6 @@
         "name": "TMG",
         "image": "/where_we_are_logos/tmg.png",
         "website": "https://www.transmarketgroup.com"
-    },
-    {
-        "name": "Peak6",
-        "image": "/where_we_are_logos/peak6.png",
-        "website": "https://peak6.com"
     },
     {
         "name": "Akuna",
@@ -73,6 +73,11 @@
         "name": "Goldman Sachs",
         "image": "/where_we_are_logos/goldmansachs.png",
         "website": "https://www.goldmansachs.com"
+    },
+    {
+        "name": "IEX",
+        "image": "/where_we_are_logos/iex.png",
+        "website": "https://www.iex.io"
     },
     {
         "name": "Morgan Stanley",

@@ -111,8 +111,18 @@
     },
     {
         "name": "Roblox",
-        "image": "/where_we_are_logos/roblox.svg",
+        "image": "/where_we_are_logos/roblox.png",
         "website": "https://www.roblox.com"
+    },
+    {
+        "name": "Space X",
+        "image": "/where_we_are_logos/spacex.png",
+        "website": "https://www.spacex.com"
+    },
+    {
+        "name": "Amazon",
+        "image": "/where_we_are_logos/amazon.png",
+        "website": "https://www.amazon.jobs"
     },
     {
         "name": "IBM",
@@ -133,10 +143,5 @@
         "name": "Capital One",
         "image": "/where_we_are_logos/capitalone.png",
         "website": "https://www.capitalone.com"
-    },
-    {
-        "name": "Amazon",
-        "image": "/where_we_are_logos/amazon.png",
-        "website": "https://www.amazon.jobs"
     }
 ]

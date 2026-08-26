@@ -22,7 +22,7 @@ const JoinUs = () => {
           {/* Application Button */}
           <div className="text-center">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSewyg6Dd45kno3fpD5PZ9byGXFtAQ2lMgkgvc1KropFgTCp7Q/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeFy_qp4fcYELypGWhb4a-nfENiaSjxITpeOkh4V_hRGx-f6g/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-block ${theme.dust} ${theme.text_black} ${theme.hover_dust} text-body-lg font-bold py-4 px-8 rounded-lg transition-colors hover:scale-105 transform`}

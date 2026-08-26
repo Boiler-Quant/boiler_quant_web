@@ -9,27 +9,27 @@ import TimelineDot from "@mui/lab/TimelineDot";
 
 const events = [
   {
-    date: "1/12",
+    date: "8/24",
     title: "APPLICATIONS OPEN",
     time: "@ 12:00 AM",
   },
   {
-    date: "1/16",
+    date: "8/28",
     title: "FIRST CALLOUT",
-    time: "@ 7:00 PM WALC B091",
+    time: "@ 6:30 PM RAWL 3058",
   },
   {
-    date: "1/20",
+    date: "9/2",
     title: "SECOND CALLOUT",
-    time: "@ 7:00 PM LILY 3118",
+    time: "@ 7:45 PM PHYS 238",
   },
   {
-    date: "1/23",
+    date: "9/6",
     title: "APPLICATIONS DUE",
     time: "@ 11:59 PM",
   },
   {
-    date: "1/26",
+    date: "9/14",
     title: "INTERVIEWS BEGIN",
     time: "",
   },

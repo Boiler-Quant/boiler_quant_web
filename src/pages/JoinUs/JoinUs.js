@@ -8,7 +8,7 @@ const JoinUs = () => {
       className={`section-container ${theme.background} ${theme.text_white} flex flex-col items-center space-y-responsive mt-10`}
     >
       <h3 className="text-heading-md font-semibold font-frank text-center">
-        Spring 2026 Applications Are Closed 
+        Fall 2026 Applications Are Open
     
       </h3>
 
